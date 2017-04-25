@@ -7,12 +7,32 @@ ryan:
     bio: |
         Assistant Professor <br>
         Director, Utah SCS 
+
+rob:
+    display_name: "Robert Ricci"
+    webpage: "http://www.flux.utah.edu/users/ricci"
+    github: ricci
+    role: affil
+    headshot: "img/robert-ricci.jpeg"
+    bio: |
+        Research Associate Professor <br>   
+        Co-director, Flux Research Group
+
 chinmay:
     display_name: "Chinmay Kulkarni"
     webpage: "http://TBD"
     role: grad
     github: chinkulkarni
     headshot: "img/chinmay-kulkarni.jpg"
+    bio: |
+        Ph.D Student
+
+candy:
+    display_name: "Tian(Candy) Zhang"
+    webpage: "http://TBD"
+    github: Candyzh
+    role: grad
+    headshot: "img/tian-zhang.jpg"
     bio: |
         Ph.D Student
 
@@ -33,25 +53,6 @@ daniel:
     headshot: "img/daniel-rushton.jpeg"
     bio: |
         B.S/M.S Student
-
-candy:
-    display_name: "Tian(Candy) Zhang"
-    webpage: "http://TBD"
-    github: Candyzh
-    role: grad
-    headshot: "img/tian-zhang.jpg"
-    bio: |
-        Ph.D Student
-
-rob:
-    display_name: "Robert Ricci"
-    webpage: "http://www.flux.utah.edu/users/ricci"
-    github: ricci
-    role: affil
-    headshot: "img/robert-ricci.jpeg"
-    bio: |
-        Research Associate Professor <br>   
-        Co-director, Flux Research Group
 
 aniraj:
     display_name: "Aniraj Kesavan"

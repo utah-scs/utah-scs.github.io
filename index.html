@@ -14,48 +14,79 @@ notitle: true
 
 <h2>News</h2>
 <ul class="news list-unstyled">
-{% for post in site.posts limit: site.front_page_news %}
-    {% if post.shortnews %}
-        <li class="shortnews">
-            <span class="date">{{ post.date | date_to_long_string }}</span>
-            {{ post.content }}
-        </li>
-    {% else %}
-        <li class="bloglink">
-            <span class="date">{{ post.date | date_to_long_string }}</span>
-            <a href="{{ post.url }}">&raquo; {{ post.title }}</a>
-        </li>
-    {% endif %}
-{% endfor %}
-
-<h2>People</h2>
-{% for role in site.roles %}
-  <h3>{{ role.name }}</h3>
-  <ul class="people">
-  {% for item in site.data.people %}
-    {% assign person = item[1] %}
-    {% if person.role == role.key %}
-      <li>
-        {% if person.webpage %}
-        <a href="{{ person.webpage |escape }} ">
-              {% if person.headshot %}
-                 <img class="img-circle profile" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75"/>
-              {% endif %}
-        </a>
-        <div class="person">
-          <a href="{{ person.webpage |escape }} ">
-            <p> {{ person.display_name }} </p>
-          </a>
-          {% if person.bio %}
-          <p class="bio"> {{ person.bio }} </p>
-          {% endif %}
-    {% endif %}
-      </li>
-    {% endif %}
+  {% for post in site.posts limit: site.front_page_news %}
+  {% if post.shortnews %}
+  <li class="shortnews">
+    <span class="date">{{ post.date | date_to_long_string }}</span>
+    {{ post.content }}
+  </li>
+  {% else %}
+  <li class="bloglink">
+    <span class="date">{{ post.date | date_to_long_string }}</span>
+    <a href="{{ post.url }}">&raquo; {{ post.title }}</a>
+  </li>
+  {% endif %}
   {% endfor %}
-  </ul>
-{% endfor %}
 
+  <h2>People</h2>
+  <table>
+    <tr>
+      <td>
+        <table>
+          {% for item in site.data.people %}
+          {% assign person = item[1] %}
+          <td style="width:600px;" class="person {{ person.role }} ">
+            {% if person.webpage %}
+            <span>
+              <a href="{{ person.webpage |escape }} ">
+                {% if person.headshot %}
+                <img class="img-circle profile" src="{{person.headshot}}" alt="{{person.display_name}}" width="100" height="100"/>
+                {% endif %}
+              </a>
+            </span>
+          </td>
+          {% endif  %}
+          {% endfor %}
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+
+      <table>
+        <tr>
+          {% for item in site.data.people %}
+          {% assign person = item[1] %}
+          <td style="width:600px;" class="person {{ person.role }}">
+            <span>
+              <a href="{{ person.webpage |escape }} ">
+                <p> {{ person.display_name }} </p>
+              </a>
+            </span>
+          </td>
+          {% endfor %}
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+     <table>
+      <tr>
+        {% for item in site.data.people %}
+        {% assign person = item[1] %}
+        <td style="width:600px;vertical-align:top" class="person {{ person.role }}">
+            {% if person.bio %}
+            <p class="bio"> {{ person.bio }} </p>
+            {% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+    </table>
+  </td>
+</tr>
+</table
 
 
 </ul>
