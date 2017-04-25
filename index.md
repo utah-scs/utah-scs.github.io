@@ -1,1 +1,0 @@
-# Utah Scalable Computer Systems
