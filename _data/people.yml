@@ -1,29 +1,44 @@
-profx:
-    display_name: "Professor X"
-    webpage: "http://en.wikipedia.org/wiki/Professor_X"
-    github: profx
+ryan:
+    display_name: "Ryan Stutsman"
+    webpage: "http://rstutsman.github.io"
+    github: rstutsman
     role: faculty
+    headshot: "img/ryan-stutsman.jpg"
     bio: |
-        Professor X is the leader and founder of X-Men. 
-melody:
-    display_name: "Scott Summers"
-    webpage: "http://en.wikipedia.org/wiki/Cyclops_(comics)"
-    role: staff
+        TODO. 
+chinmay:
+    display_name: "Chinmay Kulkarni"
+    webpage: "http://TBD"
+    role: grad
+    github: chinkulkarni
     bio: |
-        Scott, also known as Cyclops, shoots lasers from his eyes, which makes him the perfect administrative assistant.
+        TODO
 
-wolverine:
-    display_name: "Wolverine"
-    webpage: "http://en.wikipedia.org/wiki/Wolverine_%28comics%29"
-    github: wolverine
-    role: postdoc
+asaf:
+    display_name: "Asaf Cidon"
+    webpage: "http://www.asafcidon.com/"
+    role: collab
 
-storm:
-    display_name: "Storm"
-    webpage: "http://en.wikipedia.org/wiki/Storm_%28Marvel_Comics%29"
+daniel:
+    display_name: "Daniel Rushton"
+    webpage: "https://github.com/danielrushton"
+    github: danielrushton
     role: grad
 
-jean:
-    display_name: "Jean Grey"
+candy:
+    display_name: "Tian(Candy) Zhang"
+    webpage: "http://TBD"
+    github: Candyzh
+    role: grad
+
+rob:
+    display_name: "Robert Ricci"
+    webpage: "http://www.flux.utah.edu/users/ricci"
+    role: affil
+
+aniraj:
+    display_name: "Aniraj Kesavan"
     role: alum
-    bio: "Ph.D., 2013. Now at Microsoft Research."
+    github: anirajk
+    webpage: "http://anirajk.github.io"
+    bio: "M.S Thesis, 2017. Now at Linkedin"

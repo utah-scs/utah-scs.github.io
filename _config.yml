@@ -1,5 +1,5 @@
-name: Awesome Research Group
-url: http://awesome.example.edu
+name: Utah Scalable Computer Systems
+url: http://utah-scs.github.io
 
 exclude: [bibble, README.md, Makefile, screenshot.png]
 
@@ -12,9 +12,11 @@ permalink: /blog/:year/:month/:day/:title.html
 # Sections on the "people" page.
 roles:
     - {key: faculty, name: Faculty}
+    - {key: affil, name: Affiliated Faculty}
     - {key: staff, name: Staff}
     - {key: postdoc, name: Researchers}
     - {key: grad, name: Graduate Students}
+    - {key: ugrad, name: Undergraduate Students}
     - {key: collab, name: Collaborators}
     - {key: alum, name: Alumni}
 

@@ -5,8 +5,7 @@ notitle: true
 ---
 <div class="jumbotron">
   <p>
-    The <b>Awesome Research Group</b> at <b>Example U</b> does all sorts of
-    research. Here is a place where we tell you exactly what that is!
+    <b>Utah Scalable Computer Systems</b> at the <b>University of Utah</b>
   </p>
 </div>
 
@@ -25,6 +24,30 @@ notitle: true
         </li>
     {% endif %}
 {% endfor %}
+
+{% for role in site.roles %}
+  <h3>{{ role.name }}</h3>
+  <ul class="people">
+  {% for item in site.data.people %}
+    {% assign person = item[1] %}
+    {% if person.role == role.key %}
+      <li class="person">
+        {% if person.webpage %}
+        <a href="{{ person.webpage |escape }}">
+          {{ person.display_name }}
+              {% if person.headshot %}
+                 <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75"/>
+              {% endif %}  
+        </a>
+    {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endfor %}
+
+
+
 </ul>
 {% assign numposts = site.posts | size %}
 {% if numposts >= site.front_page_news %}
