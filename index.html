@@ -35,14 +35,20 @@ notitle: true
   {% for item in site.data.people %}
     {% assign person = item[1] %}
     {% if person.role == role.key %}
-      <li class="person">
+      <li>
         {% if person.webpage %}
-        <a href="{{ person.webpage |escape }}">
+        <a href="{{ person.webpage |escape }} ">
               {% if person.headshot %}
-                 <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75"/>
-              {% endif %}  
-          {{ person.display_name }}
+                 <img class="img-circle profile" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75"/>
+              {% endif %}
         </a>
+        <div class="person">
+          <a href="{{ person.webpage |escape }} ">
+            <p> {{ person.display_name }} </p>
+          </a>
+          {% if person.bio %}
+          <p class="bio"> {{ person.bio }} </p>
+          {% endif %}
     {% endif %}
       </li>
     {% endif %}

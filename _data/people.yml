@@ -5,40 +5,60 @@ ryan:
     role: faculty
     headshot: "img/ryan-stutsman.jpg"
     bio: |
-        TODO. 
+        Assistant Professor <br>
+        Director, Utah SCS 
 chinmay:
     display_name: "Chinmay Kulkarni"
     webpage: "http://TBD"
     role: grad
     github: chinkulkarni
+    headshot: "img/chinmay-kulkarni.jpg"
     bio: |
-        TODO
+        Ph.D Student
 
 asaf:
     display_name: "Asaf Cidon"
     webpage: "http://www.asafcidon.com/"
     role: collab
+    headshot: "img/asaf-cidon.jpg"
+    bio: |
+        V.P, Barracuda Networks <br>  
+        Co founder, Sookasa
 
 daniel:
     display_name: "Daniel Rushton"
     webpage: "https://github.com/danielrushton"
     github: danielrushton
     role: grad
+    headshot: "img/daniel-rushton.jpeg"
+    bio: |
+        B.S/M.S Student
 
 candy:
     display_name: "Tian(Candy) Zhang"
     webpage: "http://TBD"
     github: Candyzh
     role: grad
+    headshot: "img/tian-zhang.jpg"
+    bio: |
+        Ph.D Student
 
 rob:
     display_name: "Robert Ricci"
     webpage: "http://www.flux.utah.edu/users/ricci"
+    github: ricci
     role: affil
+    headshot: "img/robert-ricci.jpeg"
+    bio: |
+        Research Associate Professor <br>   
+        Co-director, Flux Research Group
 
 aniraj:
     display_name: "Aniraj Kesavan"
     role: alum
     github: anirajk
     webpage: "http://anirajk.github.io"
-    bio: "M.S Thesis, 2017. Now at Linkedin"
+    headshot: "img/aniraj-kesavan.png"
+    bio: |
+        M.S Thesis, 2017 <br>
+        Linkedin
