@@ -13,7 +13,12 @@
     <body>
         <div class="container">
           <div class="header">
-            <ul class="nav nav-pills pull-right">
+            <a href="{{ site.base }}/">
+                <img src="{{ site.base }}/img/utah-scs-logo.png"
+                     srcset="{{ site.base }}/img/utah-scs-logo-large-square.png"
+                     alt="Utah Scalable Computer Systems" id="logo"><span style="font-size: 20px">Utah Scalable Computer Systems Lab<span></h1>
+            </a>
+            <ul class="nav nav-pills">
               {% assign shorturl = page.url | replace:'index.html','' %}
               {% for item in site.navigation %}
                 <li {% if item.link == shorturl %}class="active"{% endif %}>
@@ -23,11 +28,6 @@
                 </li>
               {% endfor %}
             </ul>
-            <a href="{{ site.base }}/">
-                <img src="{{ site.base }}/img/utah-scs-logo.png"
-                     srcset="{{ site.base }}/img/utah-scs-logo-large-square.png"
-                    alt="Awesome" id="logo">
-            </a>
           </div>
 
           {% comment %}Liquid is sort of terrible! I think "!= true" is the

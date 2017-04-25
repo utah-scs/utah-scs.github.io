@@ -3,11 +3,14 @@ layout: default
 title: Home
 notitle: true
 ---
+
+<!--
 <div class="jumbotron">
   <p>
     <b>Utah Scalable Computer Systems</b> at the <b>University of Utah</b>
   </p>
 </div>
+-->
 
 <h2>News</h2>
 <ul class="news list-unstyled">
@@ -25,6 +28,7 @@ notitle: true
     {% endif %}
 {% endfor %}
 
+<h2>People</h2>
 {% for role in site.roles %}
   <h3>{{ role.name }}</h3>
   <ul class="people">
@@ -34,10 +38,10 @@ notitle: true
       <li class="person">
         {% if person.webpage %}
         <a href="{{ person.webpage |escape }}">
-          {{ person.display_name }}
               {% if person.headshot %}
                  <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75"/>
               {% endif %}  
+          {{ person.display_name }}
         </a>
     {% endif %}
       </li>
