@@ -54,12 +54,6 @@ body {
     padding-bottom: 10px;
 }
 
-/* Group logo */
-#logo {
-    width: 140px;
-    height: 75px;
-    margin: 2px 0 8px 0;
-}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
