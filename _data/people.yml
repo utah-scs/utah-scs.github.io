@@ -2,43 +2,38 @@ ryan:
     display_name: "Ryan Stutsman"
     webpage: "http://rstutsman.github.io"
     github: rstutsman
-    role: faculty
+    role: "Faculty"
     headshot: "img/ryan-stutsman.jpg"
     bio: |
         TODO. 
-chinmay:
-    display_name: "Chinmay Kulkarni"
-    webpage: "http://TBD"
-    role: grad
-    github: chinkulkarni
-    bio: |
-        TODO
-
-asaf:
-    display_name: "Asaf Cidon"
-    webpage: "http://www.asafcidon.com/"
-    role: collab
-
-daniel:
-    display_name: "Daniel Rushton"
-    webpage: "https://github.com/danielrushton"
-    github: danielrushton
-    role: grad
 
 candy:
     display_name: "Tian(Candy) Zhang"
     webpage: "http://TBD"
     github: Candyzh
-    role: grad
+    role: "PhD Student"
+
+chinmay:
+    display_name: "Chinmay Kulkarni"
+    webpage: "http://TBD"
+    role: "PhD Student"
+    github: chinkulkarni
+    bio: |
+        TODO
+daniel:
+    display_name: "Daniel Rushton"
+    webpage: "https://github.com/danielrushton"
+    github: danielrushton
+    role: "MS Student"
 
 rob:
     display_name: "Robert Ricci"
     webpage: "http://www.flux.utah.edu/users/ricci"
-    role: affil
+    role: "Affiliated Faculty"
 
 aniraj:
     display_name: "Aniraj Kesavan"
-    role: alum
+    role: "Alumni"
     github: anirajk
     webpage: "http://anirajk.github.io"
     bio: "M.S Thesis, 2017. Now at Linkedin"

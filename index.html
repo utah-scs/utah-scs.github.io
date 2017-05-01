@@ -29,28 +29,23 @@ notitle: true
 {% endfor %}
 
 <h2>People</h2>
-{% for role in site.roles %}
-  <h3>{{ role.name }}</h3>
-  <ul class="people">
+
+  <div class="people">
   {% for item in site.data.people %}
     {% assign person = item[1] %}
-    {% if person.role == role.key %}
-      <li class="person">
+      <div class="person" style="margin: 10px; display: inline-block;">
         {% if person.webpage %}
         <a href="{{ person.webpage |escape }}">
-              {% if person.headshot %}
-                 <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75"/>
-              {% endif %}  
-          {{ person.display_name }}
+           <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" style="display: inline-block"/>
+           <div style="display: inline-block;">
+          {{ person.display_name }}<br>
+          {{ person.role }}
+           </div>
         </a>
-    {% endif %}
-      </li>
+      </div>
     {% endif %}
   {% endfor %}
-  </ul>
-{% endfor %}
-
-
+  </div>
 
 </ul>
 {% assign numposts = site.posts | size %}
