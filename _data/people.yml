@@ -12,12 +12,14 @@ candy:
     webpage: "http://TBD"
     github: Candyzh
     role: "PhD Student"
+    headshot: "https://avatars2.githubusercontent.com/u/19333239?v=3&s=75"
 
 chinmay:
     display_name: "Chinmay Kulkarni"
     webpage: "http://TBD"
     role: "PhD Student"
     github: chinkulkarni
+    headshot: "https://avatars0.githubusercontent.com/u/1898048?v=3&s=75"
     bio: |
         TODO
 daniel:
@@ -25,11 +27,13 @@ daniel:
     webpage: "https://github.com/danielrushton"
     github: danielrushton
     role: "MS Student"
+    headshot: "https://avatars0.githubusercontent.com/u/7841377?v=3&s=75"
 
 rob:
     display_name: "Robert Ricci"
     webpage: "http://www.flux.utah.edu/users/ricci"
     role: "Affiliated Faculty"
+    headshot: "https://avatars1.githubusercontent.com/u/829847?v=3&s=75"
 
 aniraj:
     display_name: "Aniraj Kesavan"
@@ -37,3 +41,4 @@ aniraj:
     github: anirajk
     webpage: "http://anirajk.github.io"
     bio: "M.S Thesis, 2017. Now at Linkedin"
+    headshot: "https://avatars1.githubusercontent.com/u/1841677?v=3&s=75"
