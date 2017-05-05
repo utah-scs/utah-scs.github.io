@@ -8,15 +8,15 @@ ryan:
         TODO. 
 
 candy:
-    display_name: "Tian(Candy) Zhang"
-    webpage: "http://TBD"
-    github: Candyzh
+    display_name: "Tian (Candy) Zhang"
+    webpage: "https://github.com/tiantianz"
+    github: tianztianz
     role: "PhD Student"
     headshot: "https://avatars2.githubusercontent.com/u/19333239?v=3&s=75"
 
 chinmay:
     display_name: "Chinmay Kulkarni"
-    webpage: "http://TBD"
+    webpage: "https://github.com/chinkulkarni"
     role: "PhD Student"
     github: chinkulkarni
     headshot: "https://avatars0.githubusercontent.com/u/1898048?v=3&s=75"

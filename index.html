@@ -52,3 +52,19 @@ notitle: true
 {% if numposts >= site.front_page_news %}
 <p><a href="{{ site.base }}/blog/">Older posts&hellip;</a></p>
 {% endif %}
+
+<h2>Projects</h2>
+
+<h3>Memshare</h3>
+
+Memshare is a multi-tenant web cache with smart sharing and isolation policies
+enforced through a novel log-structured cleaning policy.
+
+<ul>
+  <li><a href="https://arxiv.org/abs/1610.08129">Arxiv Tech Report</a>
+  <li><a href="https://github.com/utah-scs/lsm-sim/">Simulator Source</a>
+</ul>
+
+<h2>Publications</h2>
+
+{% include pubs.html %}
