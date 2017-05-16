@@ -7,6 +7,13 @@ ryan:
     bio: |
         TODO. 
 
+mo:
+    display_name: "Mohammed S. Al-Mahfoudh"
+    webpage: "https://gitlab.com/mohd_sm81"
+    role: "PhD Student<br><span style='font-size: 9pt;'>Co-advised with<br>Ganesh Gopalakrishnan</a>"
+    headshot: "https://gitlab.com/uploads/user/avatar/289990/avatar.png"
+    github: "mohdsm81"
+
 candy:
     display_name: "Tian (Candy) Zhang"
     webpage: "https://github.com/tiantianz"
@@ -37,7 +44,7 @@ rob:
 
 aniraj:
     display_name: "Aniraj Kesavan"
-    role: "Alumni"
+    role: "Alumni (MS 2017; at LinkedIn)"
     github: anirajk
     webpage: "http://anirajk.github.io"
     bio: "M.S Thesis, 2017. Now at Linkedin"
