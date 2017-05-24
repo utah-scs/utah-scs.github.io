@@ -12,6 +12,7 @@ notitle: true
 </div>
 -->
 
+<!--
 <h2>News</h2>
 <ul class="news list-unstyled">
 {% for post in site.posts limit: site.front_page_news %}
@@ -27,19 +28,21 @@ notitle: true
         </li>
     {% endif %}
 {% endfor %}
+-->
 
 <h2>People</h2>
 
   <div class="people">
   {% for item in site.data.people %}
     {% assign person = item[1] %}
-      <div class="person" style="margin: 10px; display: inline-block;">
+    <div class="person">
         {% if person.webpage %}
         <a href="{{ person.webpage |escape }}">
            <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" style="display: inline-block"/>
-           <div style="display: inline-block;">
+           <div class="person">
           {{ person.display_name }}<br>
-          {{ person.role }}
+          {{ person.role }}<br>
+          <span style="font-size: 9pt;">{{ person.note }}</span>
            </div>
         </a>
       </div>
@@ -55,15 +58,51 @@ notitle: true
 
 <h2>Projects</h2>
 
-<h3>Memshare</h3>
+<!--
+<h3>Extending Low-latency Storage</h3>
 
-Memshare is a multi-tenant web cache with smart sharing and isolation policies
-enforced through a novel log-structured cleaning policy.
+<span style='font-weight: bold;'><a href="https://www.usenix.org/conference/hotcloud17/program/presentation/zhang">Sandstorm</a></span>
+proposes using JIT-based runtimes for low-overhead fine-grained isolation and
+pushing compute into low-latency, high-throughput databases.
+
+<h3>Low-latency Live Migration</h3>
+
+<span style='font-weight: bold;'>Rocksteady</span>
+is a database live migration system for low-latency in-memory storage that
+moves data an order of magnitude faster than existing systems while maintaining
+tail latency bounds more than two orders of magnitude lower.
 
 <ul>
-  <li><a href="https://arxiv.org/abs/1610.08129">Arxiv Tech Report</a>
+  <li><a href="http://sites.computer.org/debull/A17mar/p62.pdf">Data Engineering Bulletin Article</a>
+  <li><a href="https://github.com/utah-scs/RAMCloud/">Source</a>
+</ul>
+-->
+
+<h3>Caching</h3>
+
+<span style='font-weight: bold;'><a href="https://www.usenix.org/conference/atc17/program/presentation/cidon">Memshare</a></span>
+is a drop-in memcached replacment with first class support for multi-tenancy.
+Memshare's unique combination of in-memory cleaning and online per-tenant hit
+rate curve profiling give it better hit rates than exsiting caches even while
+it allows the cache operator to control QoS, sharing, and isolation between
+applications.
+
+<ul>
+  <li><a href="https://www.usenix.org/conference/atc17/program/presentation/cidon">Paper page at USENIX ATC'17</a>
   <li><a href="https://github.com/utah-scs/lsm-sim/">Simulator Source</a>
 </ul>
+
+<!--
+<span style='font-weight: bold;'><a href="https://arxiv.org/abs/1702.02588">Flashield</a></span>
+is a drop-in memcached replacement that incorporates flash as a second-tier for
+superior hit rates and DRAM plus simple ML to extend SSD device life by more
+than 40x compared to a naive victim cache approach.
+
+<ul>
+  <li><a href="https://arxiv.org/abs/1702.02588">Tech Report on Arxiv</a>
+  <li><a href="https://github.com/utah-scs/lsm-sim/">Simulator Source</a>
+</ul>
+-->
 
 <h2>Publications</h2>
 

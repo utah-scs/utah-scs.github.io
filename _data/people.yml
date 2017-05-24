@@ -8,22 +8,23 @@ ryan:
         TODO. 
 
 mo:
-    display_name: "Mohammed S. Al-Mahfoudh"
-    webpage: "https://gitlab.com/mohd_sm81"
-    role: "PhD Student<br><span style='font-size: 9pt;'>Co-advised with<br>Ganesh Gopalakrishnan</a>"
+    display_name: "Mohammed Al-Mahfoudh"
+    webpage: "http://gitlab.com/mohd_sm81"
+    role: "PhD Student"
+    note: "<span style='font-size: 9pt;'>Co-advised with<br>Ganesh Gopalakrishnan</a>"
     headshot: "https://gitlab.com/uploads/user/avatar/289990/avatar.png"
     github: "mohdsm81"
 
 candy:
     display_name: "Tian (Candy) Zhang"
-    webpage: "https://github.com/tiantianz"
+    webpage: "http://github.com/tiantianz"
     github: tianztianz
     role: "PhD Student"
     headshot: "https://avatars2.githubusercontent.com/u/19333239?v=3&s=75"
 
 chinmay:
     display_name: "Chinmay Kulkarni"
-    webpage: "https://github.com/chinkulkarni"
+    webpage: "http://github.com/chinkulkarni"
     role: "PhD Student"
     github: chinkulkarni
     headshot: "https://avatars0.githubusercontent.com/u/1898048?v=3&s=75"
@@ -31,10 +32,10 @@ chinmay:
         TODO
 daniel:
     display_name: "Daniel Rushton"
-    webpage: "https://github.com/danielrushton"
+    webpage: "http://github.com/danielrushton"
     github: danielrushton
     role: "MS Student"
-    headshot: "https://avatars0.githubusercontent.com/u/7841377?v=3&s=75"
+    headshot: "img/daniel-rushton.jpg"
 
 rob:
     display_name: "Robert Ricci"
@@ -44,8 +45,9 @@ rob:
 
 aniraj:
     display_name: "Aniraj Kesavan"
-    role: "Alumni (MS 2017; at LinkedIn)"
+    role: "Alumni"
     github: anirajk
     webpage: "http://anirajk.github.io"
+    note: "MS 2017, now at LinkedIn"
     bio: "M.S Thesis, 2017. Now at Linkedin"
     headshot: "https://avatars1.githubusercontent.com/u/1841677?v=3&s=75"
