@@ -37,6 +37,13 @@ daniel:
     role: "BS Student"
     headshot: "img/daniel-rushton.jpg"
 
+sara:
+    display_name: "Sara Adamson"
+    webpage: "http://github.com/smadamson"
+    github: danielrushton
+    role: "BS Student"
+    headshot: "https://avatars3.githubusercontent.com/u/17459123?s=75&v=4"
+
 rob:
     display_name: "Robert Ricci"
     webpage: "http://www.flux.utah.edu/users/ricci"
