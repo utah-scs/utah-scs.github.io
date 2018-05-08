@@ -30,19 +30,22 @@ chinmay:
     headshot: "https://avatars0.githubusercontent.com/u/1898048?v=3&s=75"
     bio: |
         TODO
+
+mazhar:
+    display_name: "Mazhar Naqvi"
+    webpage: "http://github.com/mazharn"
+    role: "PhD Student"
+    github: mazharn
+    headshot: "https://avatars0.githubusercontent.com/u/8597456?s=75"
+    bio: |
+        TODO
+
 daniel:
     display_name: "Daniel Rushton"
     webpage: "http://github.com/drrushton"
     github: danielrushton
     role: "BS Student"
     headshot: "img/daniel-rushton.jpg"
-
-sara:
-    display_name: "Sara Adamson"
-    webpage: "http://github.com/smadamson"
-    github: danielrushton
-    role: "BS Student"
-    headshot: "https://avatars3.githubusercontent.com/u/17459123?s=75&v=4"
 
 rob:
     display_name: "Robert Ricci"
@@ -58,3 +61,12 @@ aniraj:
     note: "MS 2017, now at LinkedIn"
     bio: "M.S Thesis, 2017. Now at Linkedin"
     headshot: "https://avatars1.githubusercontent.com/u/1841677?v=3&s=75"
+
+sara:
+    display_name: "Sara Adamson"
+    webpage: "http://github.com/smadamson"
+    github: smadamson
+    role: "Alumni"
+    note: "BS 2018, now at Sampleminded"
+    headshot: "https://avatars3.githubusercontent.com/u/17459123?s=75&v=4"
+
