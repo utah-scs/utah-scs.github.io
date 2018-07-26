@@ -78,7 +78,37 @@ tail latency bounds more than two orders of magnitude lower.
 </ul>
 -->
 
-<h3>Caching</h3>
+<h3>Sandstorm - <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1750558">NSF CAREER CSR-1750558</a></h3>
+
+Businesses are moving data and applications into the cloud, meaning that many
+applications and data are consolidated efficiently in one place on fewer
+servers. Cloud storage services must keep the data of thousands of customers
+separated while also allowing customers to operate on it efficiently. Safely
+intermixing customer-provided operations over data is problematic.
+Historically, processor hardware isolates programs, but increasing data access
+rates make that costly.
+
+The goal of this project is to sidestep legacy
+isolation costs with a new approach to storage that allows safe operation on data
+without hardware protection using recent advances in programming languages.
+It combats data movement between disaggregated storage and compute
+nodes with untrusted tenant extensions pushed to Sandstorm, a new cloud storage
+system. Sandstorm's insight is that storage extensions can use language-level
+isolation to eliminate hardware isolation overheads that cannot be avoided
+today: not with virtual machines, containers, nor serverless Lambdas. Sandstorm
+also eliminates copying data for safety, so extensions benefit from low-level
+hardware functionality like zero-copy network transmission. The project will
+develop multitenant benchmarks, low-cost performance-isolated concurrency
+mechanisms for multicores, techniques to minimize data movement within servers,
+storage extensions that demonstrate the benefits, and distributed extensions
+over clusters.
+
+The overall goal is for Sandstorm to enable any cloud developer to accelerate
+data-intensive applications like real-time social network and natural graph
+analysis and fine-grained coordination of hundreds of thousands of autonomous
+vehicles.
+
+<h3>Memshare</h3>
 
 <span style='font-weight: bold;'><a href="https://www.usenix.org/conference/atc17/program/presentation/cidon">Memshare</a></span>
 is a drop-in memcached replacment with first class support for multi-tenancy.
