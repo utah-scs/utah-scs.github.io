@@ -40,6 +40,15 @@ mazhar:
     bio: |
         TODO
 
+ankit:
+    display_name: "Ankit Bhardwaj"
+    webpage: "http://github.com/ankit-iitb"
+    role: "PhD Student"
+    github: ankit-iitb
+    headshot: "https://avatars0.githubusercontent.com/u/13118532?s=75"
+    bio: |
+        TODO
+
 daniel:
     display_name: "Daniel Rushton"
     webpage: "http://github.com/drrushton"
