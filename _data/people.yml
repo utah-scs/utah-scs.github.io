@@ -72,12 +72,12 @@ aniraj:
     headshot: "https://avatars1.githubusercontent.com/u/1841677?v=3&s=75"
 
 sara:
-    display_name: "Sara Adamson"
+    display_name: "Sara Moore"
     webpage: "http://github.com/smadamson"
     github: smadamson
     role: "Alumni"
     note: "BS 2018, now at InsideSales"
-    headshot: "https://avatars3.githubusercontent.com/u/17459123?s=75&v=4"
+    headshot: "img/sara-moore.jpg"
 
 aaron:
     display_name: "Aaron Langford"
