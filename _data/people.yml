@@ -49,12 +49,12 @@ ankit:
     bio: |
         TODO
 
-daniel:
-    display_name: "Daniel Rushton"
-    webpage: "http://github.com/drrushton"
-    github: danielrushton
+jacob:
+    display_name: "Jacob Barzee"
+    webpage: "http://github.com/jmbarzee"
+    github: jmbarzee
     role: "BS Student"
-    headshot: "img/daniel-rushton.jpg"
+    headshot: " https://avatars1.githubusercontent.com/u/13714624?s=75&v=4"
 
 rob:
     display_name: "Robert Ricci"
@@ -79,10 +79,18 @@ sara:
     note: "BS 2018, now at InsideSales"
     headshot: "img/sara-moore.jpg"
 
+daniel:
+    display_name: "Daniel Rushton"
+    webpage: "http://github.com/drrushton"
+    github: danielrushton
+    role: "Alumni"
+    note: "BS 2018, now at NVIDIA"
+    headshot: "img/daniel-rushton.jpg"
+
 aaron:
     display_name: "Aaron Langford"
     webpage: "http://github.com/aaronlangford31"
     github: aaronlangford31
     role: "Alumni"
-    note: "BS 2018"
+    note: "BS 2018, now at Amazon"
     headshot: "https://avatars3.githubusercontent.com/u/6590515?s=75&v=4"
