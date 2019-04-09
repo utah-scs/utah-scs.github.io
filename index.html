@@ -61,7 +61,7 @@ notitle: true
 <!--
 <h3>Extending Low-latency Storage</h3>
 
-<span style='font-weight: bold;'><a href="https://www.usenix.org/conference/hotcloud17/program/presentation/zhang">Sandstorm</a></span>
+<span style='font-weight: bold;'><a href="https://www.usenix.org/conference/hotcloud17/program/presentation/zhang">Splinter</a></span>
 proposes using JIT-based runtimes for low-overhead fine-grained isolation and
 pushing compute into low-latency, high-throughput databases.
 
@@ -78,24 +78,57 @@ tail latency bounds more than two orders of magnitude lower.
 </ul>
 -->
 
-<h3><a href="./sandstorm">Sandstorm/Splinter</a></h3>
+<h3><a href="./splinter">Splinter/Sandstorm: Fine-grained Storage-level Functions for In-memory Stores</a></h3>
 
-<span style='font-weight: bold;'><a href="./sandstorm">Sandstorm</a></span> is
+<span style='font-weight: bold;'><a href="./splinter">Splinter</a></span> is
 a new cloud in-memory key-value store that combats data movement between
 disaggregated storage and compute nodes with untrusted tenant extensions that
-are pushed to it at runtime.  Sandstorm's key insight is that storage
+are pushed to it at runtime.  Splinter's key insight is that storage
 extensions can use language-level isolation to eliminate hardware isolation
 overheads that cannot be avoided today: not with virtual machines, containers,
-nor serverless Lambdas. Sandstorm also eliminates copying data for safety, so
+nor serverless Lambdas. Splinter also eliminates copying data for safety, so
 extensions benefit from low-level hardware functionality like zero-copy network
 transmission.
 
 <ul>
+  <li><a href="{{ site.baseurl }}/splinter">Project Page</a>
   <li><a href="https://www.usenix.org/node/222600">Paper page at USENIX OSDI '18</a>
-  <li><a href="https://github.com/utah-scs/Sandstorm/">Sandstorm/Splinter Source</a>
+  <li><a href="https://github.com/utah-scs/sandstorm/">Splinter Source</a>
 </ul>
 
-<h3>Memshare</h3>
+<h3>Flashield: A Hybrid Flash/DRAM Key-value Cache that Controls Flash Write Amplification</h3>
+
+Today large scale web-cache operators do not deploy SSD for web caching. SSD
+access times are sufficient, but web caches items are high churn. Using an SSD
+as cache (or as a second-level cache for DRAM) still subjects Flash to many
+small writes that wear out the drive quickly. Flashield combats this. It uses
+DRAM as both a cache and a filter. Items in DRAM are tracked to determine
+whether they are worth preserving on Flash when they become colder. Good
+candidates are not just those that will be accessed in the future but which
+also will not be modified for a sufficent duration. Beyond determining which
+cached values are "flashworthy", Flashield also uses a new DRAM-conscious
+scheme for index objects on Flash, since otherwise DRAM could be dominated
+purely by location metadata for small items on large Flash SSDs. Experiments
+show that Flashield can reduce SSD write amplifciation by 5x compared to other
+approaches, significantly extending the life of devices.
+
+<ul>
+  <li><a href="http://www.usenix.org/conference/atc17/program/presentation/cidon">Paper at NSDI'19</a>
+</ul>
+
+<h3>Rocksteady: Fast Data Migration for In-memory Key-value Stores</h3>
+
+Kernel-bypass in-memory stores can perform millions of operations per second
+per machine with tight response times less than 10 μs. Rocksteady is a data
+migration mechanism for in-memory stores that moves data quickly, retains low
+tail response times, and doesn't rely on expensive in-memory redundancy.
+
+<ul>
+  <li><a href="https://dl.acm.org/citation.cfm?doid=3132747.3132784">Paper at SOSP'17</a>
+  <li><a href="https://github.com/utah-scs/RAMCloud/tree/rocksteady-sosp2017">Rocksteady Source</a>
+</ul>
+
+<h3>Memshare: Multi-tenant In-memory Web Cache Sharing</h3>
 
 <span style='font-weight: bold;'><a href="https://www.usenix.org/conference/atc17/program/presentation/cidon">Memshare</a></span>
 is a drop-in memcached replacment with first class support for multi-tenancy.

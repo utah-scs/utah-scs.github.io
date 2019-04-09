@@ -4,6 +4,7 @@ ryan:
     github: rstutsman
     role: "Faculty"
     headshot: "img/ryan-stutsman.jpg"
+    splinter: true
     bio: |
         TODO. 
 
@@ -21,6 +22,7 @@ candy:
     github: tianztianz
     role: "PhD Student"
     headshot: "https://avatars2.githubusercontent.com/u/19333239?v=3&s=75"
+    splinter: true
 
 chinmay:
     display_name: "Chinmay Kulkarni"
@@ -28,6 +30,7 @@ chinmay:
     role: "PhD Student"
     github: chinkulkarni
     headshot: "https://avatars0.githubusercontent.com/u/1898048?v=3&s=75"
+    splinter: true
     bio: |
         TODO
 
@@ -37,6 +40,7 @@ mazhar:
     role: "PhD Student"
     github: mazharn
     headshot: "https://avatars0.githubusercontent.com/u/8597456?s=75"
+    splinter: true
     bio: |
         TODO
 
@@ -46,6 +50,7 @@ ankit:
     role: "PhD Student"
     github: ankit-iitb
     headshot: "https://avatars0.githubusercontent.com/u/13118532?s=75"
+    splinter: true
     bio: |
         TODO
 
@@ -55,12 +60,14 @@ jacob:
     github: jmbarzee
     role: "BS Student"
     headshot: " https://avatars1.githubusercontent.com/u/13714624?s=75&v=4"
+    splinter: true
 
 rob:
     display_name: "Robert Ricci"
     webpage: "http://www.flux.utah.edu/users/ricci"
     role: "Affiliated Faculty"
     headshot: "https://avatars1.githubusercontent.com/u/829847?v=3&s=75"
+    splinter: true
 
 aniraj:
     display_name: "Aniraj Kesavan"
@@ -78,6 +85,7 @@ sara:
     role: "Alumni"
     note: "BS 2018, now at InsideSales"
     headshot: "img/sara-moore.jpg"
+    splinter: true
 
 daniel:
     display_name: "Daniel Rushton"
