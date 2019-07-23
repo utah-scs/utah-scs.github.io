@@ -1,0 +1,50 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["cidon_memshare"] %}
+{% include paper.html paper=paper %}
+
+<h2>Abstract</h2>
+
+<p>
+Web application performance heavily relies on the hit rate of DRAM
+key-value caches. Current DRAM caches statically partition memory across
+applications that share the cache. This results in under utilization and limits
+cache hit rates. We present Memshare, a DRAM key-value cache that dynamically
+manages memory across applications. Memshare provides a resource sharing model
+that guarantees reserved memory to different applications while dynamically
+pooling and sharing the remaining memory to optimize overall hit rate.
+</p>
+
+<p>
+Key-value caches are typically memory capacity bound, which leaves cache server
+CPU and memory bandwidth idle. Memshare leverages these resources with a
+log-structured design that allows it to provide better hit rates than
+conventional caches by dynamically re-partitioning memory among applications.
+We implemented Memshare and ran it on a week-long trace from a commercial
+memcached provider. Memshare increases the combined hit rate of the
+applications in the trace from 84.7% to 90.8%, and it reduces the total number
+of misses by 39.7% without significantly affecting cache throughput or latency.
+Even for single-tenant applications, Memshare increases the average hit rate of
+the state-of-the-art key-value cache by an additional 2.7%
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+<pre><code>@inproceedings{cidon:memshare,
+  author = {Asaf Cidon and Daniel Rushton and Stephen M. Rumble and Ryan Stutsman},
+  title = { {Memshare: Memory Resource Sharing in Multi-tenant Web Caches} },
+  booktitle = {Proceedings of the 2017 USENIX Conference on Annual Technical Conference},
+  series = {USENIX ATC'17},
+  year = {2017},
+  location = {Santa Clara, CA},
+  publisher = {USENIX Association},
+  address = {Berkeley, CA, USA},
+  url = {http://www.usenix.org/conference/atc17/program/presentation/cidon},
+}</code></pre>
+
+{% include sponsors.html sponsors="nsf" %}

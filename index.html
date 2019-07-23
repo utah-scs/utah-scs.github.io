@@ -12,135 +12,35 @@ notitle: true
 </div>
 -->
 
-<!--
-<h2>News</h2>
+<span style="font-style: italic; font-size: 12pt; text-align: justified;">
+The Scalable Computer Systems Lab develops new, efficient networked storage systems targeted toward increasingly granular and multi-tenant workloads in data centers and the cloud.
+</span>
+
+<hr>
+
+<div style="float: right; border-left: solid 1px silver; padding: 5px; margin: 0px;">
+<p style="font-size: 14pt;">News</p>
 <ul class="news list-unstyled">
 {% for post in site.posts limit: site.front_page_news %}
     {% if post.shortnews %}
         <li class="shortnews">
-            <span class="date">{{ post.date | date_to_long_string }}</span>
-            {{ post.content }}
+          <span class="date">{{ post.date | date_to_long_string }}</span><br>
+        {{ post.content }}
         </li>
     {% else %}
         <li class="bloglink">
-            <span class="date">{{ post.date | date_to_long_string }}</span>
-            <a href="{{ post.url }}">&raquo; {{ post.title }}</a>
+          <span class="date">{{ post.date | date_to_long_string }}</span><br>
+          <a href="{{ post.url }}">&raquo; {{ post.title }}</a>
         </li>
     {% endif %}
 {% endfor %}
--->
+</div>
 
-<h2>People</h2>
+<div style="padding: 10px; margin: 10px; max-width: 550px;">
+  <img src="{{ site.base }}/img/splinter/osdi18.jpg" style="max-width: 500px"><br>
+  <span style="font-size: 10pt;">Splinter team at OSDI'18 in San Diego (Sara Moore, Ryan Stutsman, Chinmay Kulkarni, and Mazhar Naqvi).</span>
+</div>
 
-  <div class="people">
-  {% for item in site.data.people %}
-    {% assign person = item[1] %}
-    <div class="person">
-        {% if person.webpage %}
-        <a href="{{ person.webpage |escape }}">
-           <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" style="display: inline-block"/>
-           <div class="person">
-          {{ person.display_name }}<br>
-          {{ person.role }}<br>
-          <span style="font-size: 9pt;">{{ person.note }}</span>
-           </div>
-        </a>
-      </div>
-    {% endif %}
-  {% endfor %}
-  </div>
-
-</ul>
-{% assign numposts = site.posts | size %}
-{% if numposts >= site.front_page_news %}
-<p><a href="{{ site.base }}/blog/">Older posts&hellip;</a></p>
-{% endif %}
-
-<h2>Projects</h2>
-
-<!--
-<h3>Extending Low-latency Storage</h3>
-
-<span style='font-weight: bold;'><a href="https://www.usenix.org/conference/hotcloud17/program/presentation/zhang">Splinter</a></span>
-proposes using JIT-based runtimes for low-overhead fine-grained isolation and
-pushing compute into low-latency, high-throughput databases.
-
-<h3>Low-latency Live Migration</h3>
-
-<span style='font-weight: bold;'>Rocksteady</span>
-is a database live migration system for low-latency in-memory storage that
-moves data an order of magnitude faster than existing systems while maintaining
-tail latency bounds more than two orders of magnitude lower.
-
-<ul>
-  <li><a href="http://sites.computer.org/debull/A17mar/p62.pdf">Data Engineering Bulletin Article</a>
-  <li><a href="https://github.com/utah-scs/RAMCloud/">Source</a>
-</ul>
--->
-
-<h3><a href="./splinter">Splinter/Sandstorm: Fine-grained Storage-level Functions for In-memory Stores</a></h3>
-
-<span style='font-weight: bold;'><a href="./splinter">Splinter</a></span> is
-a new cloud in-memory key-value store that combats data movement between
-disaggregated storage and compute nodes with untrusted tenant extensions that
-are pushed to it at runtime.  Splinter's key insight is that storage
-extensions can use language-level isolation to eliminate hardware isolation
-overheads that cannot be avoided today: not with virtual machines, containers,
-nor serverless Lambdas. Splinter also eliminates copying data for safety, so
-extensions benefit from low-level hardware functionality like zero-copy network
-transmission.
-
-<ul>
-  <li><a href="{{ site.baseurl }}/splinter">Project Page</a>
-  <li><a href="https://www.usenix.org/node/222600">Paper page at USENIX OSDI '18</a>
-  <li><a href="https://github.com/utah-scs/sandstorm/">Splinter Source</a>
-</ul>
-
-<h3>Flashield: A Hybrid Flash/DRAM Key-value Cache that Controls Flash Write Amplification</h3>
-
-Today large scale web-cache operators do not deploy SSD for web caching. SSD
-access times are sufficient, but web caches items are high churn. Using an SSD
-as cache (or as a second-level cache for DRAM) still subjects Flash to many
-small writes that wear out the drive quickly. Flashield combats this. It uses
-DRAM as both a cache and a filter. Items in DRAM are tracked to determine
-whether they are worth preserving on Flash when they become colder. Good
-candidates are not just those that will be accessed in the future but which
-also will not be modified for a sufficent duration. Beyond determining which
-cached values are "flashworthy", Flashield also uses a new DRAM-conscious
-scheme for index objects on Flash, since otherwise DRAM could be dominated
-purely by location metadata for small items on large Flash SSDs. Experiments
-show that Flashield can reduce SSD write amplifciation by 5x compared to other
-approaches, significantly extending the life of devices.
-
-<ul>
-  <li><a href="https://www.usenix.org/conference/nsdi19/presentation/eisenman">Paper at NSDI'19</a>
-</ul>
-
-<h3>Rocksteady: Fast Data Migration for In-memory Key-value Stores</h3>
-
-Kernel-bypass in-memory stores can perform millions of operations per second
-per machine with tight response times less than 10 μs. Rocksteady is a data
-migration mechanism for in-memory stores that moves data quickly, retains low
-tail response times, and doesn't rely on expensive in-memory redundancy.
-
-<ul>
-  <li><a href="https://dl.acm.org/citation.cfm?doid=3132747.3132784">Paper at SOSP'17</a>
-  <li><a href="https://github.com/utah-scs/RAMCloud/tree/rocksteady-sosp2017">Rocksteady Source</a>
-</ul>
-
-<h3>Memshare: Multi-tenant In-memory Web Cache Sharing</h3>
-
-<span style='font-weight: bold;'><a href="https://www.usenix.org/conference/atc17/program/presentation/cidon">Memshare</a></span>
-is a drop-in memcached replacment with first class support for multi-tenancy.
-Memshare's unique combination of in-memory cleaning and online per-tenant hit
-rate curve profiling give it better hit rates than exsiting caches even while
-it allows the cache operator to control QoS, sharing, and isolation between
-applications.
-
-<ul>
-  <li><a href="https://www.usenix.org/conference/atc17/program/presentation/cidon">Paper page at USENIX ATC '17</a>
-  <li><a href="https://github.com/utah-scs/lsm-sim/">Simulator Source</a>
-</ul>
 
 <!--
 <span style='font-weight: bold;'><a href="https://arxiv.org/abs/1702.02588">Flashield</a></span>
@@ -153,7 +53,3 @@ than 40x compared to a naive victim cache approach.
   <li><a href="https://github.com/utah-scs/lsm-sim/">Simulator Source</a>
 </ul>
 -->
-
-<h2>Publications</h2>
-
-{% include pubs.html %}

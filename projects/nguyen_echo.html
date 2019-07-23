@@ -1,0 +1,40 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["nguyen_echo"] %}
+{% include paper.html paper=paper %}
+
+<h2>Abstract</h2>
+
+<p>
+Economies of scale associated with hyper-scale public cloud platforms offer
+exibility and cost-effectiveness, resulting in various services and businesses
+moving to the cloud. One area with little progress in this direction is
+cellular core networks. A cellular core network manages the state of cellular
+clients; it is essentially a large distributed state machine with very
+different virtualization challenges compared to typical cloud services. In this
+paper we present a novel cellular core network architecture, called ECHO,
+particularly suited to public cloud deployments, where the availability
+guarantees might be an order of magnitude worse compared to existing
+(redundant) hardware platforms. We present the design and implementation of our
+approach and evaluate its functionality on a public cloud platform. Analysis
+shows ECHO promises higher availability than existing telco solutions.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+<pre><code>@inproceedings{nguyen:echo,
+  author = { Binh Nguyen and Tian Zhang and Bozidar Radunovic and Ryan Stutsman and Thomas Karagiannis and Jakub Kocur and Jacobus Van der Merwe },
+  title = { {ECHO: A Reliable Distributed Cellular Core Network for Hyper-scale Public Clouds} },
+  booktitle = {Proceedings of the 24th Annual International Conference on Mobile Computing and Networking},
+  series = { Mobicom'18 },
+  year = 2018,
+  month = Oct,
+  url = {https://sigmobile.org/mobicom/2018/program.php},
+}</code></pre>
+
+{% include sponsors.html sponsors="nsf" %}

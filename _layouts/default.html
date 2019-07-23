@@ -12,28 +12,35 @@
     </head>
     <body>
         <div class="container">
-          <div class="header">
-            <a href="{{ site.base }}/">
-                <img src="{{ site.base }}/img/utah-scs-logo.png"
-                     srcset="{{ site.base }}/img/utah-scs-logo-large-square.png"
-                     alt="Utah Scalable Computer Systems" id="logo"><span style="font-size: 20px">Utah Scalable Computer Systems Lab<span></h1>
-            </a>
-            <!--
-            <ul class="nav nav-pills">
-              {% assign shorturl = page.url | replace:'index.html','' %}
+          <div class="header" style="vertical-align: middle;">
+            <div style="float: left;">
+              <a href="{{ site.base }}/">
+                  <img src="{{ site.base }}/img/utah-scs-logo.png"
+                       srcset="{{ site.base }}/img/utah-scs-logo-large-square.png"
+                       alt="Utah Scalable Computer Systems" id="logo">
+              </a>
+            </div>
+            <div style="float: right; height: 100px; display: flex; align-items: center;">
+              <ul class="nav nav-pills">
               {% for item in site.navigation %}
-                <li {% if item.link == shorturl %}class="active"{% endif %}>
+                <li {% if item.title == page.title %}class="active"{% endif %}>
                   <a href="{{ site.base }}{{ item.link }}">
                     {{ item.title }}
                   </a>
-                </li>
+                  </li>
               {% endfor %}
-            </ul>
-            -->
+              </ul>
+            <!--
             <a href="https://github.com/utah-scs/">
-              <img src="{{ site.base }}/img/GitHub-Mark-64px.png" style="float:right; margin-top: 25px;" height=32>
+              <img src="{{ site.base }}/img/GitHub-Mark-64px.png" style="float:right; margin-top: 38px;" height=32>
             </a>
+            -->
+            </div>
+            <div style="height: 100px; display: flex; align-items: center;">
+              <a href="{{ site.base }}/" style="font-size: 16px;">Utah Scalable Computer Systems Lab</a>
+            </div>
           </div>
+          <hr style="clear: both; margin: 0px 0px 10px 0px;">
 
           {% comment %}Liquid is sort of terrible! I think "!= true" is the
           only way to do negation?{% endcomment %}
@@ -43,13 +50,12 @@
 
           {{ content }}
 
+          <hr style="clear: both; margin: 10px 0px 0px 0px;">
           <div class="footer">
-            <p>
+            <span>
+              <img src="{{ site.base }}/img/uu-logo.jpg" width="200px"><br>
               <a href="http://cs.utah.edu/">School Of Computing</a>
-              at the
-              <a href="http://www.utah.edu/">University of
-                Utah</a>
-            </p>
+            </span>
           </div>
 
         </div> <!-- /container -->

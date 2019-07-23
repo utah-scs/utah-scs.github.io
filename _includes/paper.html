@@ -1,0 +1,17 @@
+<style>
+{{ include.paper.key }}_div:after {
+  clear: both;
+}
+</style>
+<div id="{{ include.paper.key }}_div" style="vertical-align: middle; display: table-cell;">
+  {% if include.paper.logo != "" %}
+    <img src="{{ site.base }}/{{ include.paper.logo }}" width="150" align="left" style="margin: 10px;">
+  {% endif %}
+  <div style="vertical-align: middle; height: 150; display: table-cell;">
+    <span style="font-size: 16pt;">{{ include.paper.title }}</span><br>
+    <span>{{ include.paper.authors }}</span><br>
+    <span>{{ include.paper.series }}</span><br><br>
+    {% include paper-nav.html paper=include.paper %}
+  </div>
+</div>
+

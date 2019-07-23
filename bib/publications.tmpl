@@ -14,13 +14,11 @@
 		</td>
 		<td class="publication">
 			<span class="pubtitle">
-				{%- set url = entry|main_url %}
-				{%- if url %}
-				<img src="img/pdficon_small.png" width="16"
-					height="16" alt="PDF" />
-				<a href="{{ url|escape }}">{{ entry|title }}</a>.
-				{%- else %}
+				{%- set url = "projects/" ~ entry.fields['key']|replace(':', '_') %}
+				{%- if entry.fields['scs_no_page'] == "true" %}
 				{{ entry|title }}.
+				{%- else %}
+				<a href="{{ url|escape }}">{{ entry|title }}</a>.
 				{%- endif %}
 			</span><br />
 			<span class="authors">
@@ -34,6 +32,13 @@
 			{%- endif %}
 			<br />
 			<span class="links">
+				{%- if entry.fields['scs_no_page'] != "true" %}
+				[<a href="{{ url|escape }}">More Details</a>]
+        {% endif %}
+				{%- set url = entry|main_url %}
+				{%- if url %}
+				[<a href="{{ url|escape }}">Publisher Page</a>]
+				{%- endif %}
 			{%- for type, url in (entry|extra_urls).iteritems() %}
 				[<a href="{{ url|escape }}">{{ type|escape }}</a>]
 			{%- endfor %}

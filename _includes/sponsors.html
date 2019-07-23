@@ -1,0 +1,27 @@
+<h2>Generously Sponsored By</h2>
+
+<div style="text-align: center;">
+  <span>
+    {% assign sponsors = include.sponsors %}
+    {% if sponsors == nil or sponsors contains 'nsf' %}
+    <span style="padding: 40px;">
+      <div style="display: inline-block;">
+        <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1566175">
+          <img src="{{site.baseurl}}/img/nsf-logo.png" alt="NSF Logo" width="128px"><br>
+        </a>
+      </div>
+    </span>
+    {% endif %}
+    {% if sponsors == nil or sponsors contains 'facebook' %}
+    <span style="padding: 40px; vertical-align: middle;">
+      Facebook
+    </span>
+    {% endif %}
+    {% if sponsors == nil or sponsors contains 'vmware' %}
+    <span style="padding: 40px; vertial-align: middle;">
+      VMware
+    </span>
+    {% endif %}
+  </span>
+</div>
+

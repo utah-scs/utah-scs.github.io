@@ -1,0 +1,54 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["kulkarni_splinter"] %}
+{% include paper.html paper=paper %}
+
+<h2>Abstract</h2>
+
+<p>
+In-memory key-value stores that use kernel-bypass networking serve millions of
+operations per second per machine with microseconds of latency.  They are fast
+in part because they are simple, but their simple interfaces force applications
+to move data across the network.  This is inefficient for operations that
+aggregate over large amounts of data, and it causes delays when traversing
+complex data structures.  Ideally, applications could push small functions to
+storage to avoid round trips and data movement; however, pushing code to these
+fast systems is challenging. Any extra complexity for interpreting or isolating
+code cuts into their latency and throughput benefits.
+</p>
+
+<p>
+We present Splinter, a low-latency key-value store that clients extend by
+pushing code to it. Splinter is designed for modern multi-tenant data centers;
+it allows mutually distrusting tenants to write their own fine-grained
+extensions and push them to the store at runtime. The core of Splinter's design
+relies on type- and memory-safe extension code to avoid conventional hardware
+isolation costs. This still allows for bare-metal execution, avoids data
+copying across trust boundaries, and makes granular storage functions that
+perform less than a microsecond of compute practical.  Our measurements show
+that Splinter can process 3.5&nbsp;million remote extension invocations per
+second with a median round-trip latency of less than 9&nbsp;&mu;s at densities
+of more than 1,000 tenants per server. We provide an implementation of
+Facebook's TAO as an 800&nbsp;line extension that, when pushed to a Splinter
+server, improves performance by 400&nbsp;Kop/s to perform 3.2&nbsp;Mop/s over
+online graph data with 30&nbsp;&mu;us remote access times.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+<pre><code>@inproceedings{kulkarni:splinter,
+  author = { Chinmay Kulkarni and Sara Moore and Mazhar Naqvi and Tian Zhang and Robert Ricci and Ryan Stutsman },
+  title = { {Splinter: Bare-Metal Extensions for Multi-Tenant Low-Latency Storage} },
+  year = 2018,
+  month = Oct,
+  booktitle = {Proceedings of the Thirteenth USENIX Symposium on Operating Systems Design and Implementation},
+  series = {OSDI '18},
+  url = {https://www.usenix.org/node/222600},
+}</code></pre>
+
+{% include sponsors.html sponsors="nsf facebook vmware" %}

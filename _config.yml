@@ -17,11 +17,13 @@ base: ''
 
 # Navigation bar links.
 navigation:
-    - title: Home
-      link: /
-    - title: Research
-      link: /research/
+    - title: People
+      link: /people.html
+    - title: Projects
+      link: /projects/
     - title: Publications
       link: /publications.html
+    - title: Join
+      link: /join.html
     - title: Code
       link: https://github.com/utah-scs/

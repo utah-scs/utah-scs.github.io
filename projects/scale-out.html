@@ -1,0 +1,148 @@
+---
+layout: default
+title: Large-scale Systems Atop Scale-out In-memory Storage
+projects:
+  - link: project/scale-out
+    name: Scale-out In-memory Storage
+    summary: Large-scale Systems Atop Scale-out In-memory Storage
+---
+
+<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1566175" style="font-size: 14pt;">
+  NSF CNS 1566175
+</a>
+
+<hr>
+
+<div style="float: left; padding: 10px; margin: 10px; max-width: 550px;">
+  <img src="{{ site.base }}/img/splinter/osdi18.jpg" style="max-width: 500px"><br>
+  <span style="font-size: 10pt;">Splinter team at OSDI'18 in San Diego (Sara
+    Moore, Ryan Stutsman, Chinmay Kulkarni, and Mazhar Naqvi).</span>
+</div>
+
+<p>
+  Research into kernel-bypass, RDMA, and in-memory storage has resulted in
+  distributed storage systems that can provide on-demand access to billions of
+  pieces of information per second, but the benefit of these fast systems has
+  not yet trickled down to applications. A key problem is that, today, these
+  systems are fast in part because they are simplistic and stripped-down,
+  which limits how applications can interact with data.
+</p>
+
+<p>
+  The goal of this project has been to generalize the benefits of fast
+  networking in order to support full, realistic applications. The
+  work has spanned three thrusts.
+</p>
+<ol>
+  <li>
+    <p>
+      Foremost, is a <em>new model of stored procedures for &mu;s-scale in-memory
+      storage that overcomes the simplistic data models of today's fast,
+      in-memory stores</em>
+      The goal is to eliminate inefficiency and forced data movement that come
+      from simplistic <tt>get()</tt> and <tt>put()</tt> storage interfaces, and
+      the goal is to do it without sacrificing the performance of running
+      native code on stored data
+      (<a href="#splinter">Splinter</a> and
+      <a href="#sandstorm">Sandstorm</a>).
+    </p>
+  </li>
+  <li>
+    <p>
+      For low-latency in-memory storage to be efficient it must also <em>scale in
+        response to changes in workload with minimum impact</em> (especially on
+      storage tail latency, since it hurts applications that collect data in
+      real-time at scale).
+      Hence, another goal has been minimizing the impact of data migration
+      (<a href="#rocksteady">Rocksteady</a>) and replication
+      (<a href="#tailwind">Tailwind</a>) for in-memory storage, along with
+      dynamically reapportioning memory resources among application caches
+      (<a href="#memshare">Memshare</a>).
+    </p>
+  </li>
+  <li>
+    <p>
+      Finally, we have built several applications on top of scale-out, in-memory
+      storage including real-time distributed aggregation, inference serving for
+      machine learning models, state-of-the-art performance in
+      <a href="#splinter">real-time graph querying</a>, and a
+      fault-tolerant control plane for a 4G mobile control plane
+      (<a href="#echo">ECHO</a>).
+    </p>
+  </li>
+</ol>
+
+<h2>Publications</h2>
+
+<h3>&mu;s-scale Stored Procedures</h3>
+
+<a name="splinter"></a>
+{% assign splinter = site.data.pubs["kulkarni_splinter"] %}
+{% include scale-out-paper.html paper=splinter
+    note="Application-specific native-code storage-level functions with 10
+    &mu;s response times."%}
+
+<a name="sandstorm"></a>
+{% assign sandstorm = site.data.pubs["zhang_sandstorm"] %}
+{% include scale-out-paper.html paper=sandstorm
+    note="JIT Javascript/WASM runtimes for
+    embedding data-intensive operations within &mu;s-scale storage systems." %}
+
+<h3>Distribution</h3>
+
+<a name="rocksteady"></a>
+{% assign rocksteady = site.data.pubs["kulkarni_rocksteady"] %}
+{% include scale-out-paper.html paper=rocksteady
+    note="Tail-latency focused data migration for &mu;s-scale in-memory storage
+    that exploits workload skew." %}
+
+<a name="tailwind"></a>
+{% assign tailwind = site.data.pubs["taleb_tailwind"] %}
+{% include scale-out-paper.html paper=tailwind
+    note="RDMA-based replication that accelerates both replication and
+    normal-case request processing for &mu;s-scale in-memory storage." %}
+
+<a name="memshare"></a>
+{% assign memshare = site.data.pubs["cidon_memshare"] %}
+{% include scale-out-paper.html paper=memshare
+    note="Dynamic memory partitioning for multi-tenant web caches that
+    improves hit rates while providing performance isolation." %}
+
+<h3>Applications</h3>
+
+<a name="echo"></a>
+{% assign echo = site.data.pubs["nguyen_echo"] %}
+{% include scale-out-paper.html paper=echo
+    note="A mobile control plane that externalizes state in fast storage for
+    fault tolerance and high availability." %}
+
+<h2>Impact</h2>
+
+Beyond improvements to scale-out &mu;s-scale storage, the work under this
+project has resulted in joint collaborations with Microsoft Research. Along
+with supporting graduate students, several undergraduates have participated in
+efforts related to the project, including two who helped coauthor the above
+publications and two that have completed undergraduate theses.
+
+<h2>Team</h2>
+
+<div class="people" style="width: 100%; text-align: center;">
+{% for item in site.data.people %}
+  {% assign person = item[1] %}
+  {% if person.scaleout == true %}
+    <span style="text-align: center; display: inline;">
+      <a href="{{ person.webpage |escape }}">
+         <div style="display: table-cell; padding: 20px;">
+           {% if person.headshot contains 'http' %}
+           <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" alt="{{ person.display_name }}"><br>{{ person.display_name }}</span>
+           {% else %}
+           <img class="img-circle" src="{{site.base}}/{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" alt="{{ person.display_name }}"><br>{{ person.display_name }}</span>
+           {% endif %}
+         </div>
+      </a>
+     </span>
+  {% endif %}
+{% endfor %}
+</div>
+
+{% include sponsors.html %}

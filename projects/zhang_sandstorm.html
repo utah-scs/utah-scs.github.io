@@ -1,0 +1,45 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["zhang_sandstorm"] %}
+{% include paper.html paper=paper %}
+
+<h2>Abstract</h2>
+
+<p> Large scale in-memory key-value stores like RAMCloud can perform millions
+of operations per second per server with a few microseconds of access latency.
+However, these systems often only provide simple feature sets, and the lack of
+extensibility is an obstacle for building higher-level services. We evaluate
+the possibility of using JavaScript for shipping computation to data and for
+extending database functionality by comparing against other possible
+approaches.
+</p>
+
+<p>
+Microbenchmarks are promising; the V8 JavaScript runtime provides near native
+performance with reduced isolation costs when compared with native code and
+hardware-based protections. We conclude with initial thoughts on how this
+technology can be deployed for fast procedures that operate on in-memory data,
+that maximize gains from JIT, and that exploit the kernel-bypass DMA
+capabilities of modern network cards.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+<pre><code>@inproceedings{zhang:sandstorm,
+  author = { Tian Zhang and Ryan Stutsman },
+  title = { {JavaScript for Extending Low-latency In-memory Key-value Stores} },
+  booktitle = {Proceedings of the 9th USENIX Conference on Hot Topics in Cloud Computing},
+  series = {HotCloud'17},
+  year = {2017},
+  location = {Santa Clara, California},
+  publisher = {USENIX Association},
+  address = {Berkeley, CA, USA},
+  url = {http://www.usenix.org/conference/hotcloud17/program/presentation/zhang},
+}</code></pre>
+
+{% include sponsors.html sponsors="nsf" %}

@@ -14,7 +14,7 @@
    viewBox="0 0 744.09448819 1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
    sodipodi:docname="utah-scs-logo.svg">
   <defs
      id="defs4">
@@ -46,10 +46,10 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1145"
-     inkscape:window-height="950"
-     inkscape:window-x="275"
-     inkscape:window-y="0"
+     inkscape:window-width="3830"
+     inkscape:window-height="2078"
+     inkscape:window-x="0"
+     inkscape:window-y="34"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
@@ -59,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -68,18 +68,18 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:#c83737;fill-opacity:1;stroke:#c83737;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:#cc0000;fill-opacity:1;stroke:#c83737;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M 87.431641,76.569399 40.5625,123.43854 l 93.73633,0 -46.867189,-46.869141 z"
        id="rect4518"
        inkscape:connector-curvature="0" />
     <path
        id="path4523"
        d="m 109.47727,62.976905 -46.869137,60.580655 93.736327,0 -46.86719,-60.580655 z"
-       style="fill:#c83737;fill-opacity:1;stroke:#c83737;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:#cc0000;fill-opacity:1;stroke:#c83737;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        inkscape:connector-curvature="0" />
     <path
        inkscape:connector-curvature="0"
-       style="fill:#c83737;fill-opacity:1;stroke:#c83737;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:#cc0000;fill-opacity:1;stroke:#c83737;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 131.52291,49.831013 -46.869142,73.877397 93.736332,0 -46.86719,-73.877397 z"
        id="path4525" />
   </g>

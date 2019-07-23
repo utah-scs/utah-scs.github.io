@@ -1,26 +1,34 @@
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   font-size: 14px;
   font-weight: 400;
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "PT Serif", Georgia, "Times New Roman", serif;
   font-weight: 300;
   color: #313131;
   letter-spacing: -.025rem;
 }
 
+p {
+  text-align: justify;
+}
+
 a:hover {
   text-decoration: none;
-  color: #c83737;
+  color: #cc0000;
 }
 
 .nav-pills>li.active>a {
-  background-color: #c83737;
+  background-color: #cc0000;
+}
+
+.nav-pills>li.active>a:hover {
+  background-color: #cc0000;
 }
 
 h2 {
@@ -39,21 +47,33 @@ a {
   color: black;
 }
 
+.pubtitle a { /* Color links on publication page to make them more obvious */
+  color: #cc0000;
+}
+
+.publication .links a { /* Color links on publication page to make them more obvious */
+  color: #cc0000;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .footer {
   padding-left: 15px;
-  padding-right: 15px; }
+  padding-right: 15px;}
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5; }
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
 
 /* Custom page footer */
 .footer {
+  margin-top: 19px;
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
+  border-top: 0px solid silver;
   text-align: center;
   font-size: 0.8em; }
 
@@ -156,7 +176,11 @@ ul.project-people {
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 900px; }
+    /*border-top: solid 10px #e5e5e5;
+    border-bottom: solid 10px #e5e5e5;*/
+    margin-top: 0px;
+    max-width: 900px;
+  }
 
   .card-columns {
     -webkit-column-count: 3;
@@ -183,7 +207,7 @@ ul.project-people {
 /* Jumbotron */
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5; }
+  border-bottom: 1px solid silver; }
 
 .jumbotron p {
   font-size: 15px; }
@@ -196,7 +220,7 @@ ul.project-people {
 #logo {
   width: 100px;
   height: 100px;
-  margin: 2px 0 8px 0; }
+  margin: 0px 0 0px 0; }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -206,10 +230,6 @@ ul.project-people {
     padding-left: 0;
     padding-right: 0; }
 
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px; }
-
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0; } }
@@ -217,10 +237,12 @@ ul.project-people {
 @media screen and (max-width: 767px) {
   .nav-pills {
     display: block;
-    margin: 0 auto 1em; }
+    margin: 0 auto 1em;
+  }
 
   .nav-pills .nav-link {
-    padding: .5em .4em; }
+    padding: .5em .4em;
+  }
 
   #logo {
     clear: both; } }

@@ -5,8 +5,8 @@ ryan:
     role: "Faculty"
     headshot: "img/ryan-stutsman.jpg"
     splinter: true
-    bio: |
-        TODO. 
+    scaleout: true
+    category: "faculty"
 
 mo:
     display_name: "Mohammed Al-Mahfoudh"
@@ -15,6 +15,7 @@ mo:
     note: "<span style='font-size: 9pt;'>Co-advised with<br>Ganesh Gopalakrishnan</a>"
     headshot: "img/mo.png"
     github: "mohdsm81"
+    category: "phd"
 
 candy:
     display_name: "Tian (Candy) Zhang"
@@ -23,6 +24,8 @@ candy:
     role: "PhD Student"
     headshot: "https://avatars2.githubusercontent.com/u/19333239?v=3&s=75"
     splinter: true
+    scaleout: true
+    category: "phd"
 
 chinmay:
     display_name: "Chinmay Kulkarni"
@@ -31,8 +34,8 @@ chinmay:
     github: chinkulkarni
     headshot: "https://avatars0.githubusercontent.com/u/1898048?v=3&s=75"
     splinter: true
-    bio: |
-        TODO
+    scaleout: true
+    category: "phd"
 
 mazhar:
     display_name: "Mazhar Naqvi"
@@ -41,8 +44,7 @@ mazhar:
     github: mazharn
     headshot: "https://avatars0.githubusercontent.com/u/8597456?s=75"
     splinter: true
-    bio: |
-        TODO
+    category: "phd"
 
 ankit:
     display_name: "Ankit Bhardwaj"
@@ -51,8 +53,7 @@ ankit:
     github: ankit-iitb
     headshot: "https://avatars0.githubusercontent.com/u/13118532?s=75"
     splinter: true
-    bio: |
-        TODO
+    category: "phd"
 
 jacob:
     display_name: "Jacob Barzee"
@@ -61,6 +62,7 @@ jacob:
     role: "BS Student"
     headshot: " https://avatars1.githubusercontent.com/u/13714624?s=75&v=4"
     splinter: true
+    category: "ug"
 
 rob:
     display_name: "Robert Ricci"
@@ -68,37 +70,54 @@ rob:
     role: "Affiliated Faculty"
     headshot: "https://avatars1.githubusercontent.com/u/829847?v=3&s=75"
     splinter: true
+    scaleout: true
+    category: "faculty-affiliated"
+
+paridhi:
+    display_name: "Paridhi Baheti"
+    role: "Alumni"
+    github: anirajk
+    note: "MS 2019"
+    category: "alumni-masters"
 
 aniraj:
     display_name: "Aniraj Kesavan"
-    role: "Alumni"
+    role: "MS 2017"
     github: anirajk
     webpage: "http://anirajk.github.io"
-    note: "MS 2017, now at LinkedIn"
+    note: "Now at LinkedIn"
     bio: "M.S Thesis, 2017. Now at Linkedin"
     headshot: "https://avatars1.githubusercontent.com/u/1841677?v=3&s=75"
+    category: "alumni-masters"
+    scaleout: true
 
 sara:
     display_name: "Sara Moore"
     webpage: "http://github.com/smadamson"
     github: smadamson
-    role: "Alumni"
-    note: "BS 2018, now at InsideSales"
+    role: "BS 2018"
+    note: "Now at InsideSales"
     headshot: "img/sara-moore.jpg"
     splinter: true
+    category: "alumni-ug"
+    scaleout: true
 
 daniel:
     display_name: "Daniel Rushton"
     webpage: "http://github.com/drrushton"
     github: danielrushton
-    role: "Alumni"
-    note: "BS 2018, now at NVIDIA"
+    role: "BS 2018"
+    note: "Now at NVIDIA"
     headshot: "img/daniel-rushton.jpg"
+    category: "alumni-ug"
+    scaleout: true
 
 aaron:
     display_name: "Aaron Langford"
     webpage: "http://github.com/aaronlangford31"
     github: aaronlangford31
-    role: "Alumni"
-    note: "BS 2018, now at Amazon"
+    role: "BS 2018"
+    note: "Now at Amazon"
     headshot: "https://avatars3.githubusercontent.com/u/6590515?s=75&v=4"
+    category: "alumni-ug"
+    scaleout: true

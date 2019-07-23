@@ -1,0 +1,98 @@
+---
+layout: default
+title: Projects
+projects:
+  - link: project/
+    name:
+    summary:
+---
+
+<!--
+<h3>Extending Low-latency Storage</h3>
+
+<span style='font-weight: bold;'><a href="https://www.usenix.org/conference/hotcloud17/program/presentation/zhang">Splinter</a></span>
+proposes using JIT-based runtimes for low-overhead fine-grained isolation and
+pushing compute into low-latency, high-throughput databases.
+
+<h3>Low-latency Live Migration</h3>
+
+<span style='font-weight: bold;'>Rocksteady</span>
+is a database live migration system for low-latency in-memory storage that
+moves data an order of magnitude faster than existing systems while maintaining
+tail latency bounds more than two orders of magnitude lower.
+
+<ul>
+  <li><a href="http://sites.computer.org/debull/A17mar/p62.pdf">Data Engineering Bulletin Article</a>
+  <li><a href="https://github.com/utah-scs/RAMCloud/">Source</a>
+</ul>
+-->
+
+<h3><a href="./scale-out">Large-scale Systems Atop Scale-out In-memory Storage (NSF CNS 1566175)</a></h3>
+<p>
+Kernel-bypass and RDMA have resulted in fast, &mu;s-scale key-value stores.
+Their performance comes from their simplicity, but applications are forced to
+interact with data through an inefficient <tt>get()/put()</tt> interface.  This
+project investigates raising the level of functionality that fast key-value
+stores provide while preserving performance, a new model for programming them
+using &mu;s-scale user-defined functions, and application of these stores for
+building larger distributed systems.
+</p>
+
+<h3><a href="./splinter">Safe and Efficient Extensions for Low-Latency Multitenant Storage (NSF CNS 1750558)</a></h3>
+<p>
+<span style='font-weight: bold;'><a href="./splinter">Splinter</a></span> is
+a new cloud in-memory key-value store that combats data movement between
+disaggregated storage and compute nodes with untrusted tenant extensions that
+are pushed to it at runtime.  Splinter's key insight is that storage
+extensions can use language-level isolation to eliminate hardware isolation
+overheads that cannot be avoided today: not with virtual machines, containers,
+nor serverless Lambdas. Splinter also eliminates copying data for safety, so
+extensions benefit from low-level hardware functionality like zero-copy network
+transmission.
+</p>
+
+<!--
+<h3>Flashield: A Hybrid Flash/DRAM Key-value Cache that Controls Flash Write Amplification</h3>
+<p>
+Using SSDs as a web cache subjects Flash to many small writes that wear out the
+drive quickly. Flashield combats by using DRAM as both a cache and a
+filter.  Items in DRAM are tracked to determine whether they are worth
+preserving on Flash when they become colder.  Experiments show that Flashield
+can reduce SSD write amplifciation by 5x compared to other approaches,
+significantly extending the life of devices.
+</p>
+
+<ul>
+  <li><a href="https://www.usenix.org/conference/nsdi19/presentation/eisenman">Paper at NSDI'19</a>
+</ul>
+-->
+
+
+<!--
+<h3>Rocksteady: Fast Data Migration for In-memory Key-value Stores</h3>
+
+Kernel-bypass in-memory stores can perform millions of operations per second
+per machine with tight response times less than 10 μs. Rocksteady is a data
+migration mechanism for in-memory stores that moves data quickly, retains low
+tail response times, and doesn't rely on expensive in-memory redundancy.
+
+<ul>
+  <li><a href="https://dl.acm.org/citation.cfm?doid=3132747.3132784">Paper at SOSP'17</a>
+  <li><a href="https://github.com/utah-scs/RAMCloud/tree/rocksteady-sosp2017">Rocksteady Source</a>
+</ul>
+
+<h3>Memshare: Multi-tenant In-memory Web Cache Sharing</h3>
+
+<span style='font-weight: bold;'><a href="https://www.usenix.org/conference/atc17/program/presentation/cidon">Memshare</a></span>
+is a drop-in memcached replacment with first class support for multi-tenancy.
+Memshare's unique combination of in-memory cleaning and online per-tenant hit
+rate curve profiling give it better hit rates than exsiting caches even while
+it allows the cache operator to control QoS, sharing, and isolation between
+applications.
+
+<ul>
+  <li><a href="https://www.usenix.org/conference/atc17/program/presentation/cidon">Paper page at USENIX ATC '17</a>
+  <li><a href="https://github.com/utah-scs/lsm-sim/">Simulator Source</a>
+</ul>
+-->
+

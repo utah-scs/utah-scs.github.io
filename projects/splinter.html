@@ -1,0 +1,54 @@
+---
+layout: default
+title: Safe and Efficient Extensions for Low-Latency Multitenant Storage
+projects:
+  - link: project/splinter
+    name: Safe and Efficient Extensions for Low-Latency Multitenant Storage
+    summary: Safe and Efficient Extensions for Low-Latency Multitenant Storage
+---
+
+<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1566175" style="font-size: 14pt;">
+  NSF CNS 1750558
+</a>
+
+<hr>
+
+<div style="float: left; padding: 10px; margin: 10px; max-width: 550px;">
+  <img src="{{ site.base }}/img/splinter/osdi18.jpg" style="max-width: 500px"><br>
+  <span style="font-size: 10pt;">Splinter team at OSDI'18 in San Diego (Sara
+    Moore, Ryan Stutsman, Chinmay Kulkarni, and Mazhar Naqvi).</span>
+</div>
+<br style="clear: both;">
+
+<h2>Publications</h2>
+
+<h3>&mu;s-scale Stored Procedures</h3>
+
+<a name="splinter"></a>
+{% assign splinter = site.data.pubs["kulkarni_splinter"] %}
+{% include scale-out-paper.html paper=splinter
+    note="Application-specific native-code storage-level functions with 10
+    &mu;s response times."%}
+
+<h2>Team</h2>
+
+<div class="people" style="width: 100%; text-align: center;">
+{% for item in site.data.people %}
+  {% assign person = item[1] %}
+  {% if person.splinter == true %}
+    <span style="text-align: center; display: inline;">
+      <a href="{{ person.webpage |escape }}">
+         <div style="display: table-cell; padding: 20px;">
+           {% if person.headshot contains 'http' %}
+           <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" alt="{{ person.display_name }}"><br>{{ person.display_name }}</span>
+           {% else %}
+           <img class="img-circle" src="{{site.base}}/{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" alt="{{ person.display_name }}"><br>{{ person.display_name }}</span>
+           {% endif %}
+         </div>
+      </a>
+     </span>
+  {% endif %}
+{% endfor %}
+</div>
+
+{% include sponsors.html %}

@@ -1,0 +1,123 @@
+---
+layout: default
+title: People
+notitle: true
+---
+
+{%
+  assign ryan = site.data.people["ryan"]
+%}
+
+{% assign phds = site.data.people | where: "category", "phd" %}
+{% assign ugs = site.data.people | where: "category", "ug" %}
+
+{% assign masters_alumni = site.data.people | where: "category", "alumni-masters" %}
+{% assign ug_alumni = site.data.people | where: "category", "alumni-ug" %}
+
+<h2>Faculty</h2>
+
+<div id="ryan">
+  <a href="{{ ryan.webpage |escape }}">
+     <img class="img-circle" src="{{ryan.headshot}}" alt="{{ryan.display_name}}" width="100" height="100" style="float: left; margin: 10px;"/>
+  </a>
+   <a href="{{ryan.webpage |escape}}" style="font-size: 14pt;">Ryan Stutsman</a>
+   <p>
+     is Assistant Professor in the <a
+        href="http://www.utah.edu/">University of Utah</a> <a
+        href="http://www.cs.utah.edu/">School of Computing</a>. His
+      interests span operating systems, database systems, and distributed
+      systems with an emphasis on low-latency distributed storage systems.
+      Ryan was a Postdoctoral Researcher in the
+      <a href="http://research.microsoft.com/en-us/groups/db/">databases group</a> at Microsoft
+      Research, and earned his Ph.D. at Stanford University working
+      as a part of the
+      <a href="https://ramcloud.atlassian.net/wiki/spaces/RAM/overview">RAMCloud</a>
+      and the <a href="https://www.scs.stanford.edu/">Secure Computer Systems</a> labs.
+      He is the recipient of a NSF Career Award (2018).
+   </p>
+</div>
+<br style="clear: both;">
+<hr>
+
+<h2>Current Students</h2>
+
+<h3>PhD</h3>
+
+<div class="people">
+{% for person in phds %}
+  <div class="person">
+      {% if person.webpage %}
+      <a href="{{ person.webpage |escape }}">
+         <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" style="display: inline-block"/>
+         <div class="person">
+        {{ person.display_name }}<br>
+        {{ person.role }}<br>
+        <span style="font-size: 9pt;">{{ person.note }}</span>
+         </div>
+      </a>
+    </div>
+  {% endif %}
+{% endfor %}
+</div>
+
+<h3>Undergraduate</h3>
+
+<div class="people">
+{% for person in ugs %}
+  <div class="person">
+      {% if person.webpage %}
+      <a href="{{ person.webpage |escape }}">
+         <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" style="display: inline-block"/>
+         <div class="person">
+        {{ person.display_name }}<br>
+        {{ person.role }}<br>
+        <span style="font-size: 9pt;">{{ person.note }}</span>
+         </div>
+      </a>
+    </div>
+  {% endif %}
+{% endfor %}
+</div>
+
+<hr>
+
+<h2>Alumni</h2>
+
+<h3>Masters</h3>
+
+<div class="people">
+{% for person in masters_alumni %}
+  <div class="person">
+      {% if person.webpage %}
+      <a href="{{ person.webpage |escape }}">
+         <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" style="display: inline-block"/>
+         <div class="person">
+        {{ person.display_name }}<br>
+        {{ person.role }}<br>
+        <span style="font-size: 9pt;">{{ person.note }}</span>
+         </div>
+      </a>
+    </div>
+  {% endif %}
+{% endfor %}
+</div>
+
+<h3>Undergraduate</h3>
+
+<div class="people">
+{% for person in ug_alumni %}
+  <div class="person">
+      {% if person.webpage %}
+      <a href="{{ person.webpage |escape }}">
+         <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" style="display: inline-block"/>
+         <div class="person">
+        {{ person.display_name }}<br>
+        {{ person.role }}<br>
+        <span style="font-size: 9pt;">{{ person.note }}</span>
+         </div>
+      </a>
+    </div>
+  {% endif %}
+{% endfor %}
+</div>
+

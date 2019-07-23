@@ -1,0 +1,17 @@
+{%- for entry in entries %}
+{{ entry.fields['key']|replace(':', '_') }}:
+    key: "{{ entry.fields['key']|replace(':', '_') }}"
+    year: "{{ entry.fields['year'] }}"
+    url: "{{ entry|main_url|escape }}"
+    title: "{{ entry|title }}"
+    authors: "{{ entry.persons['author']|author_list }}"
+    series: "{{ entry.fields['series'] }}"
+    venue_type: "{{ entry|venue_type }}"
+    venue: "{{ entry|venue }}"
+    note: "{{ entry.fields['note']|escape }}"
+    abstract: "{{ entry.fields['abstract'] |escape }}"
+    logo: "{{ entry.fields['scs_logo'] |escape }}"
+    pdf_url: "{{ entry.fields['pdf_url'] |escape }}"
+    code_url: "{{ entry.fields['code_url'] |escape }}"
+    no_page: "{{ entry.fields['scs_no_page'] |escape }}"
+{% endfor %}

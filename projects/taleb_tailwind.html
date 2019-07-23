@@ -1,0 +1,49 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["taleb_tailwind"] %}
+{% include paper.html paper=paper %}
+
+<h2>Abstract</h2>
+
+<p>
+Replication is essential for fault-tolerance. However, in in-memory
+systems, it is a source of high overhead. Remote direct memory access (RDMA) is
+attractive to create redundant copies of data, since it is low-latency and has
+no CPU overhead at the target. However, existing approaches still result in
+redundant data copying and active receivers. To ensure atomic data transfers,
+receivers check and apply only fully received messages. Tailwind is a zero-copy
+recovery-log replication protocol for scale-out in-memory databases. Tailwind
+is the first replication protocol that eliminates <em>all</em> CPU-driven data
+copying and fully bypasses target server CPUs, thus leaving backups idle.
+Tailwind ensures all writes are atomic by leveraging a protocol that detects
+incomplete RDMA transfers. Tailwind substantially improves replication
+throughput and response latency compared with conventional RPC-based
+replication. In symmetric systems where servers both serve requests and act as
+replicas, Tailwind also improves normal-case throughput by freeing server CPU
+resources for request processing. We implemented and evaluated Tailwind on
+RAMCloud, a low-latency in-memory storage system. Experiments show Tailwind
+improves RAMCloud's normal-case request processing throughput by 1.7x. It also
+cuts down writes median and 99th percentile latencies by 2x and 3x
+respectively.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+<pre><code>@inproceedings{taleb:tailwind,
+  author = { Yacine Taleb and Ryan Stutsman and Gabriel Antoniu and Toni Cortes },
+  title = { {Tailwind: Fast and Atomic RDMA-based Replication} },
+  booktitle = {Proceedings of the 2018 USENIX Annual Technical Conference},
+  year = {2018},
+  month = Jul,
+  address = {Boston, MA},
+  url = {https://www.usenix.org/conference/atc18/presentation/taleb},
+  publisher = {USENIX Association},
+  series = {USENIX ATC '18},
+}</code></pre>
+
+{% include sponsors.html sponsors="nsf facebook vmware" %}

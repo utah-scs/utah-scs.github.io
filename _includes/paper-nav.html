@@ -1,0 +1,21 @@
+<style>
+  img.link-icon {
+    width: 16px;
+  }
+  a.link-icon {
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+</style>
+<span>
+  {% if include.paper.url != "" %}
+  <a class="link-icon" href="{{ include.paper.url }}"><img src="{{ site.base }}/img/url.png" class="link-icon">&nbsp;Publisher Page</a>
+  {% endif %}
+  {% if include.paper.pdf_url != "" %}
+  <a class="link-icon" href="{{ site.base }}/{{ include.paper.pdf_url }}"><img src="{{ site.base }}/img/pdf.png" class="link-icon">&nbsp;PDF</a>
+  {% endif %}
+  {% if include.paper.code_url != ""  %}
+  <a class="link-icon" href="{{ include.paper.code_url }}"><img src="{{ site.base }}/img/code.png" class="link-icon">&nbsp;Source Code</a>
+  {% endif %}
+  <a class="link-icon" href="#bibtex"><img src="{{ site.base }}/img/bib.png" class="link-icon">&nbsp;Bibtex</a>
+</span>
