@@ -40,11 +40,12 @@ chinmay:
 mazhar:
     display_name: "Mazhar Naqvi"
     webpage: "http://github.com/mazharn"
-    role: "PhD Student"
+    role: "MS 2019"
+    note: "Now at Microsoft"
     github: mazharn
     headshot: "https://avatars0.githubusercontent.com/u/8597456?s=75"
     splinter: true
-    category: "phd"
+    category: "alumni-masters"
 
 ankit:
     display_name: "Ankit Bhardwaj"

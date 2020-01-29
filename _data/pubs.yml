@@ -1,3 +1,18 @@
+zhang_shredder:
+    key: "zhang_shredder"
+    year: "2019"
+    url: "https://dl.acm.org/doi/10.1145/3357223.3362723"
+    title: "Narrowing the Gap Between Serverless and its State with Storage Functions"
+    authors: "Tian Zhang, Dong Xie, Feifei Li, and Ryan Stutsman"
+    series: ""
+    venue_type: ""
+    venue: "Proceedings of the ACM Symposium on Cloud Computing, SoCC 2019, Santa Cruz, CA, USA, November 20-23, 2019"
+    note: ""
+    abstract: ""
+    logo: "img/sandstorm.png"
+    pdf_url: "papers/shredder.pdf"
+    code_url: ""
+    no_page: ""
 
 eisenmann_flashield:
     key: "eisenmann_flashield"

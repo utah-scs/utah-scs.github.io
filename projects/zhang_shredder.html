@@ -1,0 +1,57 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["zhang_shredder"] %}
+{% include paper.html paper=paper %}
+
+<p>
+<br>
+<b>Best Paper Runner-Up Award</b>
+</p>
+
+<h2>Abstract</h2>
+
+<p>Serverless computing has gained attention due to its fine-grained provisioning,
+large-scale multi-tenancy, and on-demand scaling. However, it also forces
+applications to externalize state in remote storage, adding substantial
+overheads. To fix this "data shipping problem" we built Shredder, a low-latency
+multi-tenant cloud store that allows small units of computation to be performed
+directly within storage nodes. Storage tenants provide Shredder with JavaScript
+functions (or WebAssembly programs), which can interact directly with data
+without moving them over the network.
+</p>
+
+<p>The key challenge in Shredder is safely isolating thousands of tenant storage
+functions while minimizing data interaction costs. Shredder uses a unique
+approach where its data store and networking paths are implemented in native
+code to ensure performance, while isolated tenant functions interact with data
+using a V8-specific intermediate representation that avoids expensive
+cross-protection-domain calls and data copying. As a result, Shredder can
+execute 4 million remotely-invoked tenant functions per second spread over
+thousands of tenants with median and 99th-percentile response latencies of less
+than 50 μs and 500 μs, respectively. Our evaluation shows that Shredder
+achieves a 14% to 78% speedup against conventional remote storage when fetching
+items with just one to three data dependencies between them. We also
+demonstrate Shredder's effectiveness in accelerating data-intensive
+applications, including a k-hop query on social graphs that shows orders of
+magnitude gain.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+<pre><code>@inproceedings{zhang:shredder,
+  author = { Tian Zhang and Dong Xie and Feifei Li and Ryan Stutsman },
+  title = { {Narrowing the Gap Between Serverless and its State with Storage Functions} },
+  booktitle = {Proceedings of the ACM Symposium on Cloud Computing (SoCC'19)"},
+  series = {SoCC'19},
+  year = {2019},
+  location = {Santa Cruz, California},
+  publisher = {{ACM}},
+  url = {https://dl.acm.org/doi/10.1145/3357223.3362723},
+}</code></pre>
+
+{% include sponsors.html sponsors="nsf facebook vmware" %}
