@@ -1,0 +1,41 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["bhardwaj_sandstorm"] %}
+{% include paper.html paper=paper %}
+
+<h2>Abstract</h2>
+
+<p> Serverless applications create an opportunity for more granular scheduling
+across machines in cloud platforms that can improve efficiency, especially if
+functions can be run within storage services to eliminate data movement.
+However, embedding code within storage services creates code isolation
+overheads that offset some of those savings. We argue for a new approach to
+serverless function scheduling that can look within serverless applications'
+functions, profile their data movement and networking costs, and model the
+impact of different code placement and isolation schemes for those costs.
+Beyond improvements in efficiency, such an approach would fuel innovation in
+cloud isolation schemes and programming abstractions, since a scheduler with a
+modular cost modeling approach could incorporate new schemes and automatically
+use them to improve efficiency for pre-existing applications.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+<pre><code>@inproceedings{bhardwaj:sandstorm,
+  author = { Ankit Bhardwaj and Meghana Gupta and Ryan Stutsman },
+  title = { {On the Impact of Isolation Costs on Locality-aware Cloud Scheduling} },
+  booktitle = {Proceedings of the 12th USENIX Conference on Hot Topics in Cloud Computing},
+  series = {HotCloud'20},
+  year = {2020},
+  location = {Boston, Massachusetts},
+  publisher = {USENIX Association},
+  address = {Berkeley, CA, USA},
+  url = {https://www.usenix.org/conference/hotcloud20/presentation/bhardwaj},
+}</code></pre>
+
+{% include sponsors.html sponsors="nsf facebook vmware" %}

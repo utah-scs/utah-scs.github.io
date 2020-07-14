@@ -1,3 +1,20 @@
+
+bhardwaj_sandstorm:
+    key: "bhardwaj_sandstorm"
+    year: "2020"
+    url: "https://www.usenix.org/conference/hotcloud20/presentation/bhardwaj"
+    title: "On the Impact of Isolation Costs on Locality-aware Cloud Scheduling"
+    authors: "Ankit Bhardwaj, Meghana Gupta, and Ryan Stutsman"
+    series: "HotCloud'20"
+    venue_type: ""
+    venue: "Proceedings of the 12th USENIX Conference on Hot Topics in Cloud Computing (HotCloud'20)"
+    note: ""
+    abstract: ""
+    logo: "img/splinter.png"
+    pdf_url: "papers/sandstorm-isolation.pdf"
+    code_url: ""
+    no_page: ""
+
 zhang_shredder:
     key: "zhang_shredder"
     year: "2019"
