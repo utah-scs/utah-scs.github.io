@@ -9,6 +9,7 @@ notitle: true
 %}
 
 {% assign phds = site.data.people | where: "category", "phd" %}
+{% assign masters = site.data.people | where: "category", "masters" %}
 {% assign ugs = site.data.people | where: "category", "ug" %}
 
 {% assign phds_alumni = site.data.people | where: "category", "alumni-phd" %}
@@ -46,6 +47,25 @@ notitle: true
 
 <div class="people">
 {% for person in phds %}
+  <div class="person">
+      {% if person.webpage %}
+      <a href="{{ person.webpage |escape }}">
+         <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" style="display: inline-block"/>
+         <div class="person">
+        {{ person.display_name }}<br>
+        {{ person.role }}<br>
+        <span style="font-size: 9pt;">{{ person.note }}</span>
+         </div>
+      </a>
+    </div>
+  {% endif %}
+{% endfor %}
+</div>
+
+<h3>Masters</h3>
+
+<div class="people">
+{% for person in masters %}
   <div class="person">
       {% if person.webpage %}
       <a href="{{ person.webpage |escape }}">

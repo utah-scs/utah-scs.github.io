@@ -47,7 +47,7 @@ james:
 mo:
     display_name: "Mohammed Al-Mahfoudh"
     webpage: "http://gitlab.com/mohd_sm81"
-    role: "PhD Student"
+    role: "PhD 2021"
     note: "<span style='font-size: 9pt;'>Co-advised with<br>Ganesh Gopalakrishnan</a>"
     headshot: "img/mo.png"
     github: "mohdsm81"
@@ -57,21 +57,23 @@ candy:
     display_name: "Tian (Candy) Zhang"
     webpage: "http://github.com/tiantianz"
     github: tianztianz
-    role: "PhD Student"
+    role: "PhD 2021"
     headshot: "https://avatars2.githubusercontent.com/u/19333239?v=3&s=75"
     splinter: true
     scaleout: true
     category: "alumni-phd"
+    note: "Now at Google"
 
 chinmay:
     display_name: "Chinmay Kulkarni"
-    webpage: "https://chinkulkarni.github.io/"
-    role: "PhD Student"
+    webpage: "https://www.chinmayk.net/"
+    role: "PhD 2021"
     github: chinkulkarni
     headshot: "https://avatars0.githubusercontent.com/u/1898048?v=3&s=75"
     splinter: true
     scaleout: true
     category: "alumni-phd"
+    note: "Now at Lightstep"
 
 mazhar:
     display_name: "Mazhar Naqvi"
@@ -88,17 +90,18 @@ jacob:
     webpage: "http://github.com/jmbarzee"
     github: jmbarzee
     role: "BS Student"
-    headshot: "https://avatars1.githubusercontent.com/u/13714624?s=75&v=4"
+    headshot: "https://avatars1.githubusercontent.com/u/13714624?s=75"
     splinter: true
-    category: "ug-alumni"
+    category: "alumni-ug"
 
 emerson:
     display_name: "Emerson Ford"
     webpage: "http://www.linkedin.com/in/emerson-ford"
     github: emersonford
-    role: "BS Student"
+    role: "BS 2021"
     headshot: "https://avatars.githubusercontent.com/u/1847933?s=75&v=4"
-    category: "ug-alumni"
+    category: "alumni-ug"
+    note: "Now at Meta"
 
 rob:
     display_name: "Robert Ricci"
@@ -111,9 +114,19 @@ rob:
 
 paridhi:
     display_name: "Paridhi Baheti"
+    webpage: "https://www.linkedin.com/in/paridhi-baheti-03144190"
+    headshot: "img/paridhi.png"
     role: "Alumni"
-    github: anirajk
     note: "MS 2019"
+    category: "alumni-masters"
+    note: "Now at AWS"
+
+akshay:
+    display_name: "Akshay Singh "
+    webpage: "https://github.com/akshay1713"
+    headshot: "https://avatars.githubusercontent.com/u/25062601?s=75"
+    role: "Alumni"
+    note: "MS 2020"
     category: "alumni-masters"
 
 aniraj:
@@ -126,6 +139,23 @@ aniraj:
     headshot: "https://avatars1.githubusercontent.com/u/1841677?v=3&s=75"
     category: "alumni-masters"
     scaleout: true
+
+todd:
+    display_name: "Todd Thornley"
+    role: "MS"
+    github: tthorn47
+    webpage: "http://github.com/tthorn47/"
+    headshot: "https://avatars.githubusercontent.com/u/43832213?s=75"
+    category: "masters"
+
+meghana:
+    display_name: "Meghana Gupta"
+    role: "MS 2021"
+    github: meghanagupta
+    webpage: "http://meghanagupta.github.io"
+    note: "Now at Microsoft"
+    headshot: "https://avatars.githubusercontent.com/u/13051696?s=75"
+    category: "alumni-masters"
 
 sara:
     display_name: "Sara Moore"
