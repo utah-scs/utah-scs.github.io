@@ -8,6 +8,42 @@ ryan:
     scaleout: true
     category: "faculty"
 
+ankit:
+    display_name: "Ankit Bhardwaj"
+    webpage: "https://ankitbhrdwj.github.io/"
+    role: "PhD Student"
+    github: ankit-iitb
+    headshot: "https://avatars0.githubusercontent.com/u/13118532?s=75"
+    splinter: true
+    category: "phd"
+
+amit:
+    display_name: "Amit Samanta"
+    webpage: "https://samanta-amit.github.io/"
+    role: "PhD Student"
+    github: samanta-amit
+    headshot: "https://avatars.githubusercontent.com/u/17064188?s=75"
+    splinter: true
+    category: "phd"
+
+ashfaq:
+    display_name: "Md Ashfaqur Rahaman"
+    webpage: "https://aagontuk.github.io/"
+    role: "PhD Student"
+    github: aagontuk
+    headshot: "https://avatars.githubusercontent.com/u/13454573?s=75"
+    splinter: true
+    category: "phd"
+
+james:
+    display_name: "James McMahon"
+    webpage: "https://github.com/4rnge/"
+    role: "PhD Student"
+    github: 4rnge
+    headshot: "https://avatars.githubusercontent.com/u/43098353?s=75"
+    splinter: true
+    category: "phd"
+
 mo:
     display_name: "Mohammed Al-Mahfoudh"
     webpage: "http://gitlab.com/mohd_sm81"
@@ -15,7 +51,7 @@ mo:
     note: "<span style='font-size: 9pt;'>Co-advised with<br>Ganesh Gopalakrishnan</a>"
     headshot: "img/mo.png"
     github: "mohdsm81"
-    category: "phd"
+    category: "alumni-phd"
 
 candy:
     display_name: "Tian (Candy) Zhang"
@@ -25,7 +61,7 @@ candy:
     headshot: "https://avatars2.githubusercontent.com/u/19333239?v=3&s=75"
     splinter: true
     scaleout: true
-    category: "phd"
+    category: "alumni-phd"
 
 chinmay:
     display_name: "Chinmay Kulkarni"
@@ -35,7 +71,7 @@ chinmay:
     headshot: "https://avatars0.githubusercontent.com/u/1898048?v=3&s=75"
     splinter: true
     scaleout: true
-    category: "phd"
+    category: "alumni-phd"
 
 mazhar:
     display_name: "Mazhar Naqvi"
@@ -47,23 +83,22 @@ mazhar:
     splinter: true
     category: "alumni-masters"
 
-ankit:
-    display_name: "Ankit Bhardwaj"
-    webpage: "https://ankitbhrdwj.github.io/"
-    role: "PhD Student"
-    github: ankit-iitb
-    headshot: "https://avatars0.githubusercontent.com/u/13118532?s=75"
-    splinter: true
-    category: "phd"
-
 jacob:
     display_name: "Jacob Barzee"
     webpage: "http://github.com/jmbarzee"
     github: jmbarzee
     role: "BS Student"
-    headshot: " https://avatars1.githubusercontent.com/u/13714624?s=75&v=4"
+    headshot: "https://avatars1.githubusercontent.com/u/13714624?s=75&v=4"
     splinter: true
-    category: "ug"
+    category: "ug-alumni"
+
+emerson:
+    display_name: "Emerson Ford"
+    webpage: "http://www.linkedin.com/in/emerson-ford"
+    github: emersonford
+    role: "BS Student"
+    headshot: "https://avatars.githubusercontent.com/u/1847933?s=75&v=4"
+    category: "ug-alumni"
 
 rob:
     display_name: "Robert Ricci"

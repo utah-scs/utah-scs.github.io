@@ -1,4 +1,4 @@
-PYTHON=python2.7
+PYTHON=python3
 
 # targets that aren't filenames
 .PHONY: all clean deploy
