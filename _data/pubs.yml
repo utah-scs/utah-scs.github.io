@@ -2,7 +2,7 @@
 bhardwaj_pax:
     key: "bhardwaj_pax"
     year: "2022"
-    url: "None"
+    url: "https://dl.acm.org/doi/10.1145/3538643.3539752"
     title: "Cache-coherent Accelerators for Persistent Memory Crash-consistency"
     authors: "Ankit Bhardwaj, Todd Thornley, Vinita Pawar, Reto Achermann, Gerd Zellweger, and Ryan Stutsman"
     series: ""
@@ -18,7 +18,7 @@ bhardwaj_pax:
 zhong_xrp:
     key: "zhong_xrp"
     year: "2022"
-    url: "None"
+    url: "https://www.usenix.org/conference/osdi22/presentation/zhong"
     title: "XRP: In-Kernel Storage Functions with eBPF"
     authors: "Yuhong Zhong, Haoyu Li, Yu Jian Wu, Ioannis Zarkadas, Jeffrey Tao, Evan Mesterhazy, Michael Makris, Junfeng Yang, Amy Tai, Ryan Stutsman, and Asaf Cidon"
     series: ""
@@ -34,7 +34,7 @@ zhong_xrp:
 kulkarni_acheiving-throughput:
     key: "kulkarni_acheiving-throughput"
     year: "2021"
-    url: "None"
+    url: "https://www.microsoft.com/en-us/research/publication/achieving-high-throughput-and-elasticity-in-a-larger-than-memory-store/"
     title: "Achieving High Throughput and Elasticity in a Larger-than-Memory Store"
     authors: "Chinmay Kulkarni, Badrish Chandramouli, and Ryan Stutsman"
     series: ""
@@ -50,7 +50,7 @@ kulkarni_acheiving-throughput:
 zhong_bpf-storage:
     key: "zhong_bpf-storage"
     year: "2021"
-    url: "None"
+    url: "https://dl.acm.org/doi/10.1145/3458336.3465290"
     title: "BPF for Storage: An Exokernel-Inspired Approach"
     authors: "Yuhong Zhong, Hongyi Wang, Yu Jian Wu, Asaf Cidon, Ryan Stutsman, Amy Tai, and Junfeng Yang"
     series: ""
@@ -114,7 +114,7 @@ tassori_leakage-free:
 bhardwaj_asfp:
     key: "bhardwaj_asfp"
     year: "2020"
-    url: "None"
+    url: "https://www.usenix.org/conference/atc20/presentation/bhardwaj"
     title: "Adaptive Placement for In-memory Storage Functions"
     authors: "Ankit Bhardwaj, Chinmay Kulkarni, and Ryan Stutsman"
     series: "USENIX ATC'20"
@@ -125,7 +125,7 @@ bhardwaj_asfp:
     logo: ""
     pdf_url: ""
     code_url: ""
-    no_page: ""
+    no_page: "true"
 
 novak_memscale:
     key: "novak_memscale"
@@ -135,7 +135,7 @@ novak_memscale:
     authors: "Joe Novak, Ryan Stutsman, and Sneha Kumar Kasera"
     series: ""
     venue_type: ""
-    venue: "12th {IEEE} International Conference on Cloud Computing, {CLOUD} 2020"
+    venue: "12th IEEE International Conference on Cloud Computing, CLOUD 2020"
     note: ""
     abstract: ""
     logo: ""
