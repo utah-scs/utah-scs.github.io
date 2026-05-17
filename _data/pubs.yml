@@ -169,9 +169,9 @@ mcmahon_prefetching:
     logo: ""
     pdf_url: "papers/mcmahon-prefetching.pdf"
     code_url: ""
-    grants: []
-    grant_ids: []
-    no_page: "true"
+    grants: [{"id": "2245999", "label": "NSF CNS-2245999", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2245999"}]
+    grant_ids: ["2245999"]
+    no_page: ""
 
 pawar_objectier:
     key: "pawar_objectier"
@@ -198,9 +198,9 @@ pawar_objectier:
     logo: ""
     pdf_url: "papers/pawar-objectier.pdf"
     code_url: ""
-    grants: []
-    grant_ids: []
-    no_page: "true"
+    grants: [{"id": "2245999", "label": "NSF CNS-2245999", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2245999"}]
+    grant_ids: ["2245999"]
+    no_page: ""
 
 samanta_sustainable-routing:
     key: "samanta_sustainable-routing"

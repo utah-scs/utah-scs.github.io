@@ -1,0 +1,41 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["mcmahon_prefetching"] %}
+{% include paper.html paper=paper %}
+
+<h2>Summary</h2>
+
+<p>
+CXL and related memory-pooling systems make it possible to access remote memory
+at cache-line granularity, but remote access latency and bandwidth costs make
+the right transfer granularity unclear. This paper compares conventional
+page-granular remote memory access with cache-line-granular access combined
+with aggressive prefetching.
+</p>
+
+<p>
+The results show that cache-line-granular prefetching is a natural direction for
+remote memory devices, but matching or beating page-granular access is difficult
+for the workloads studied.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+{% raw %}<pre><code>@inproceedings{mcmahon:prefetching,
+  author = {James McMahon and Vinita Pawar and Ryan Stutsman},
+  title = {{Remote Memory Prefetching: Is Coarse-grained Fine?}},
+  booktitle = {Companion of the 16th ACM/SPEC International Conference on Performance Engineering},
+  series = {ICPE '25},
+  year = {2025},
+  pages = {174--179},
+  publisher = {ACM},
+  url = {https://doi.org/10.1145/3680256.3721318},
+  doi = {10.1145/3680256.3721318},
+}</code></pre>{% endraw %}
+
+{% include sponsors.html sponsors="nsf" %}

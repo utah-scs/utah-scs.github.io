@@ -98,6 +98,37 @@ dl.people dd {
 }
 
 /* Front page news. */
+.home-content {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+.home-main {
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 620px;
+}
+.home-photo {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    max-width: 550px;
+}
+.home-photo img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+.home-photo span {
+    font-size: 10pt;
+}
+.home-news {
+    flex: 0 0 360px;
+    border-left: solid 1px silver;
+    padding: 5px 0 5px 15px;
+}
+.home-news-title {
+    font-size: 14pt;
+}
 ul.news .date {
     color: #999;
     font-weight: bold;
@@ -112,6 +143,21 @@ ul.news .shortnews .date {
 }
 ul.news .bloglink a {
     font-size: 1.1em;
+}
+
+@media screen and (max-width: 800px) {
+    .home-content {
+        display: block;
+    }
+    .home-main {
+        max-width: none;
+    }
+    .home-news {
+        border-left: 0;
+        border-top: solid 1px silver;
+        margin-top: 15px;
+        padding: 10px 0 0 0;
+    }
 }
 
 .illustration {

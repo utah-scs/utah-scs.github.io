@@ -20,36 +20,42 @@ increasingly granular workloads.
 
 <hr>
 
-<div style="float: right; border-left: solid 1px silver; padding: 5px; margin: 0px;">
-<p style="font-size: 14pt;">News</p>
-<ul class="news list-unstyled">
-{% for post in site.posts limit: site.front_page_news %}
-    {% if post.shortnews %}
-        <li class="shortnews">
-          <span class="date">{{ post.date | date_to_long_string }}</span><br>
-        {{ post.content }}
-        </li>
-    {% else %}
-        <li class="bloglink">
-          <span class="date">{{ post.date | date_to_long_string }}</span><br>
-          <a href="{{ post.url }}">&raquo; {{ post.title }}</a>
-        </li>
-    {% endif %}
-{% endfor %}
-</div>
+<div class="home-content">
+  <div class="home-main">
+    <div class="home-photo">
+      <img src="{{ site.base }}/img/splinter/osdi18.jpg" alt="Splinter team at OSDI '18"><br>
+      <span>Splinter team at OSDI'18 in San Diego (Sara Moore, Ryan Stutsman, Chinmay Kulkarni, and Mazhar Naqvi).</span>
+    </div>
 
-<div style="padding: 10px; margin: 10px; width: 100%; max-width: 550px; height: auto;">
-  <img src="{{ site.base }}/img/splinter/osdi18.jpg" style="max-width: 500px; width: 100%; height: auto;"><br>
-  <span style="font-size: 10pt;">Splinter team at OSDI'18 in San Diego (Sara Moore, Ryan Stutsman, Chinmay Kulkarni, and Mazhar Naqvi).</span>
-</div>
+    <p>
+    The Utah SCS lab works at the boundary between operating systems, storage
+    systems, and computer architecture. We develop new approaches for speeding up
+    software's interactions with I/O devices, techniques to exploit
+    coherent interconnects in applications for persistent and disaggregated
+    memory systems, and programmable storage systems that move computation
+    closer to data while preserving safety and performance.
+    </p>
+  </div>
 
-<p>
-The Utah SCS lab works at the boundary between operating systems, storage
-systems, and computer architecture. Recent work studies fast I/O and memory
-ordering for emerging interconnects, cache-coherent and disaggregated memory
-systems, and programmable storage systems that move computation closer to data
-while preserving safety and performance.
-</p>
+  <div class="home-news">
+    <p class="home-news-title">News</p>
+    <ul class="news list-unstyled">
+    {% for post in site.posts limit: site.front_page_news %}
+        {% if post.shortnews %}
+            <li class="shortnews">
+              <span class="date">{{ post.date | date_to_long_string }}</span><br>
+            {{ post.content }}
+            </li>
+        {% else %}
+            <li class="bloglink">
+              <span class="date">{{ post.date | date_to_long_string }}</span><br>
+              <a href="{{ post.url }}">&raquo; {{ post.title }}</a>
+            </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+</div>
 
 
 <!--

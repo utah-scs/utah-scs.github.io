@@ -1,0 +1,40 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["pawar_objectier"] %}
+{% include paper.html paper=paper %}
+
+<h2>Summary</h2>
+
+<p>
+Page-based memory tiering moves hot pages to fast memory tiers and cold pages
+to slower, larger tiers, but many pages contain a mixture of hot and cold
+objects. ObjecTier improves fast-tier utilization by using application-level
+object knowledge to cluster hot and cold objects across pages before an
+underlying memory-tiering system makes page-placement decisions.
+</p>
+
+<p>
+The framework is designed to work with existing page-based tiering systems
+without requiring those systems to change.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+{% raw %}<pre><code>@inproceedings{pawar:objectier,
+  author = {Vinita Pawar and Ankit Bhardwaj and Ryan Stutsman},
+  title = {{ObjecTier: Non-Invasively Boosting Memory Tiering Performance}},
+  booktitle = {Companion of the 16th ACM/SPEC International Conference on Performance Engineering},
+  series = {ICPE '25},
+  year = {2025},
+  pages = {180--186},
+  publisher = {ACM},
+  url = {https://doi.org/10.1145/3680256.3721319},
+  doi = {10.1145/3680256.3721319},
+}</code></pre>{% endraw %}
+
+{% include sponsors.html sponsors="nsf" %}
