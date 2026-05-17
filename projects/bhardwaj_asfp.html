@@ -1,0 +1,31 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["bhardwaj_asfp"] %}
+{% include paper.html paper=paper %}
+
+<h2>Summary</h2>
+
+<p>
+This work dynamically chooses where to execute user-defined storage functions in
+an in-memory key-value store. Storage servers run inexpensive functions locally
+to reduce data movement, but push CPU-heavy functions back to clients when
+server-side execution would create a bottleneck.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+{% raw %}<pre><code>@inproceedings{bhardwaj:asfp,
+  author = {Ankit Bhardwaj and Chinmay Kulkarni and Ryan Stutsman},
+  title = {{Adaptive Placement for In-memory Storage Functions}},
+  booktitle = {Proceedings of the 2020 USENIX Annual Technical Conference},
+  series = {USENIX ATC '20},
+  year = {2020},
+  url = {https://www.usenix.org/conference/atc20/presentation/bhardwaj},
+}</code></pre>{% endraw %}
+
+{% include sponsors.html sponsors="nsf" %}

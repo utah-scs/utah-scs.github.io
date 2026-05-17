@@ -1,0 +1,34 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["bhardwaj_packrat"] %}
+{% include paper.html paper=paper %}
+
+<h2>Summary</h2>
+
+<p>
+Packrat improves CPU-based DNN serving by automatically choosing how many model
+instances to run, how many threads each instance should use, and how batches
+should be divided across those instances. The system reconfigures online and
+uses smaller, parallel model instances to reduce inference latency on multicore
+CPU servers.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+{% raw %}<pre><code>@inproceedings{bhardwaj:packrat,
+  author = {Ankit Bhardwaj and Amar Phanishayee and Deepak Narayanan and Ryan Stutsman},
+  title = {{Auto-reconfiguration for Latency Minimization in CPU-based DNN Serving}},
+  booktitle = {Proceedings of the 42nd International Conference on Machine Learning},
+  series = {ICML '25},
+  year = {2025},
+  pages = {4115--4129},
+  publisher = {Proceedings of Machine Learning Research},
+  url = {https://proceedings.mlr.press/v267/bhardwaj25a.html},
+}</code></pre>{% endraw %}
+
+{% include sponsors.html sponsors="nsf" %}

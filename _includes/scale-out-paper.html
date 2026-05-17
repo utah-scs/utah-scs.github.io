@@ -8,11 +8,10 @@
   {% endif %}
   <div style="height: 100px; display: table-cell;">
       <a href="{{ site.base }}/projects/{{ include.paper.key }}" style="font-size: 14pt; white-space: pre-wrap;">{{ include.paper.title }}</a>
-    <div>{{ include.paper.authors }}</div>
+    <div>{{ include.paper.author_list | default: include.paper.authors }}</div>
     <div>{{ include.paper.series }}</div>
     {% if include.note != "" %}
     <div style="padding-top: 5px;">{{ include.note }}</div>
     {% endif %}
   </div>
 </div>
-

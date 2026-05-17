@@ -1,0 +1,34 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["kulkarni_deb-ramcloud"] %}
+{% include paper.html paper=paper %}
+
+<h2>Summary</h2>
+
+<p>
+This article revisits RAMCloud's networking and request-dispatch design in the
+context of low-latency RDMA-based storage systems. It explains why RAMCloud
+uses conventional RPC-style server processing rather than one-sided RDMA, and
+uses Rocksteady to show how richer storage functionality can still exploit
+modern NIC features.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+{% raw %}<pre><code>@article{kulkarni:deb-ramcloud,
+  author = {Chinmay Kulkarni and Aniraj Kesavan and Robert Ricci and Ryan Stutsman},
+  title = {{Beyond Simple Request Processing with RAMCloud}},
+  journal = {IEEE Data Engineering Bulletin},
+  volume = {40},
+  number = {1},
+  pages = {62--69},
+  year = {2017},
+  url = {http://sites.computer.org/debull/A17mar/p62.pdf},
+}</code></pre>{% endraw %}
+
+{% include sponsors.html sponsors="nsf" %}

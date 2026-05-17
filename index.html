@@ -13,7 +13,9 @@ notitle: true
 -->
 
 <span style="font-style: italic; font-size: 12pt; text-align: justified;">
-The Scalable Computer Systems Lab develops new, efficient networked storage systems targeted toward increasingly granular and multi-tenant workloads in data centers and the cloud.
+The Scalable Computer Systems Lab develops efficient operating systems,
+storage systems, and distributed systems for emerging systems hardware and
+increasingly granular workloads.
 </span>
 
 <hr>
@@ -42,15 +44,22 @@ The Scalable Computer Systems Lab develops new, efficient networked storage syst
 </div>
 
 <p>
-Much of the work that the Utah SCS lab pursues focuses on the intersection of
-low-latency data center/cloud storage (&mu;s-scale) at large scale (tens of
-thousands of shared storage tenants). The lab's work spans data migration and
-load balancing, storage programmability and data models, shared resource
-provisioning, and use of low-latency storage within application
-domains. We frequently and closely collaborate with the Flux research group at
-Utah (<a href="https://www.flux.utah.edu/profile/ricci">Rob Ricci</a>,
-<a href="https://www.flux.utah.edu/profile/kobus">Kobus Van der Merwe</a>)
-and Microsoft Research.
-
+The Utah SCS lab works at the boundary between operating systems, storage
+systems, and computer architecture. Recent work studies fast I/O and memory
+ordering for emerging interconnects, cache-coherent and disaggregated memory
+systems, and programmable storage systems that move computation closer to data
+while preserving safety and performance.
 </p>
 
+
+<!--
+<span style='font-weight: bold;'><a href="https://arxiv.org/abs/1702.02588">Flashield</a></span>
+is a drop-in memcached replacement that incorporates flash as a second-tier for
+superior hit rates and DRAM plus simple ML to extend SSD device life by more
+than 40x compared to a naive victim cache approach.
+
+<ul>
+  <li><a href="https://arxiv.org/abs/1702.02588">Tech Report on Arxiv</a>
+  <li><a href="https://github.com/utah-scs/lsm-sim/">Simulator Source</a>
+</ul>
+-->

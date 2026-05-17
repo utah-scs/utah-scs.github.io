@@ -1,0 +1,43 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["liew_pcie-ordering"] %}
+{% include paper.html paper=paper %}
+
+<h2>Summary</h2>
+
+<p>
+Non-coherent interconnects such as PCI Express make software pay high
+source-side serialization costs when it needs fine-grained ordering across
+remote memory operations. This work proposes destination-based ordering support
+for CPU-to-device communication, including PCIe and ISA extensions that let
+software express ordering intent while hardware near the destination enforces
+the required semantics.
+</p>
+
+<p>
+The design targets two common I/O paths: ordered MMIO writes for packet
+transmission from CPUs to NICs, and ordered remote reads for RDMA-based
+key-value store lookups. By avoiding source-side stalls, the approach enables
+simpler protocols with substantially higher throughput.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+{% raw %}<pre><code>@inproceedings{liew:pcie-ordering,
+  author = {Wei Siew Liew and Md Ashfaqur Rahaman and Adarsh Patil and Ryan Stutsman and Vijay Nagarajan},
+  title = {{Efficient Remote Memory Ordering for Non-Coherent Systems}},
+  booktitle = {Proceedings of the 31st ACM International Conference on Architectural Support for Programming Languages and Operating Systems},
+  series = {ASPLOS '26},
+  year = {2026},
+  pages = {647--661},
+  publisher = {ACM},
+  url = {https://doi.org/10.1145/3779212.3790156},
+  doi = {10.1145/3779212.3790156},
+}</code></pre>{% endraw %}
+
+{% include sponsors.html sponsors="nsf" %}

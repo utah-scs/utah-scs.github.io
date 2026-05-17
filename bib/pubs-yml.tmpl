@@ -1,17 +1,30 @@
 {%- for entry in entries %}
 {{ entry.fields['key']|replace(':', '_') }}:
-    key: "{{ entry.fields['key']|replace(':', '_') }}"
-    year: "{{ entry.fields['year'] }}"
-    url: "{{ entry|main_url|escape }}"
-    title: "{{ entry|title }}"
-    authors: "{{ entry.persons['author']|author_list }}"
-    series: "{{ entry.fields['series'] }}"
-    venue_type: "{{ entry|venue_type }}"
-    venue: "{{ entry|venue }}"
-    note: "{{ entry.fields['note']|escape }}"
-    abstract: "{{ entry.fields['abstract'] |escape }}"
-    logo: "{{ entry.fields['scs_logo'] |escape }}"
-    pdf_url: "{{ entry.fields['pdf_url'] |escape }}"
-    code_url: "{{ entry.fields['code_url'] |escape }}"
-    no_page: "{{ entry.fields['scs_no_page'] |escape }}"
+    key: {{ (entry.fields['key']|replace(':', '_'))|yaml }}
+    bib_key: {{ entry.fields['key']|yaml }}
+    type: {{ entry.type|yaml }}
+    year: {{ entry.fields['year']|yaml }}
+    month: {{ entry.fields['month']|yaml }}
+    url: {{ (entry|main_url)|yaml }}
+    doi: {{ entry.fields['doi']|yaml }}
+    title: {{ (entry|title)|yaml }}
+    authors: {{ (entry.persons['author']|author_names)|yaml }}
+    author_list: {{ (entry.persons['author']|author_list)|yaml }}
+    series: {{ entry.fields['series']|yaml }}
+    venue_type: {{ (entry|venue_type)|yaml }}
+    venue: {{ (entry|venue)|yaml }}
+    booktitle: {{ entry.fields['booktitle']|yaml }}
+    journal: {{ entry.fields['journal']|yaml }}
+    volume: {{ entry.fields['volume']|yaml }}
+    number: {{ entry.fields['number']|yaml }}
+    pages: {{ entry.fields['pages']|yaml }}
+    publisher: {{ entry.fields['publisher']|yaml }}
+    note: {{ entry.fields['note']|yaml }}
+    abstract: {{ entry.fields['abstract']|yaml }}
+    logo: {{ entry.fields['scs_logo']|yaml }}
+    pdf_url: {{ entry.fields['pdf_url']|yaml }}
+    code_url: {{ entry.fields['code_url']|yaml }}
+    grants: {{ (entry|grant_list)|yaml }}
+    grant_ids: {{ (entry|grant_ids)|yaml }}
+    no_page: {{ entry.fields['scs_no_page']|yaml }}
 {% endfor %}

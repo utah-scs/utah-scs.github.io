@@ -1,0 +1,34 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["zhong_bpf-storage"] %}
+{% include paper.html paper=paper %}
+
+<h2>Summary</h2>
+
+<p>
+This work proposes using eBPF to move application-defined storage functions
+deeper into the kernel I/O path. The approach targets fast NVMe devices where
+kernel overhead is a large share of access latency, while retaining important
+file-system properties such as safety and block-to-file-offset translation.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+{% raw %}<pre><code>@inproceedings{zhong:bpf-storage,
+  author = {Yuhong Zhong and Hongyi Wang and Yu Jian Wu and Asaf Cidon and Ryan Stutsman and Amy Tai and Junfeng Yang},
+  title = {{BPF for Storage: An Exokernel-Inspired Approach}},
+  booktitle = {Workshop on Hot Topics in Operating Systems},
+  series = {HotOS '21},
+  year = {2021},
+  pages = {128--135},
+  publisher = {ACM},
+  url = {https://doi.org/10.1145/3458336.3465290},
+  doi = {10.1145/3458336.3465290},
+}</code></pre>{% endraw %}
+
+{% include sponsors.html sponsors="nsf" %}

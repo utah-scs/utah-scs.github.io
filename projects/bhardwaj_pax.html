@@ -1,0 +1,35 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["bhardwaj_pax"] %}
+{% include paper.html paper=paper %}
+
+<h2>Summary</h2>
+
+<p>
+PAX explores how a cache-coherent accelerator can provide crash consistency for
+persistent-memory data structures. The accelerator interposes on persistent
+memory operations, performs undo logging, and preserves the direct-access
+benefits of persistent memory without requiring software to execute logging code
+on the critical path.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+{% raw %}<pre><code>@inproceedings{bhardwaj:pax,
+  author = {Ankit Bhardwaj and Todd Thornley and Vinita Pawar and Reto Achermann and Gerd Zellweger and Ryan Stutsman},
+  title = {{Cache-Coherent Accelerators for Persistent Memory Crash Consistency}},
+  booktitle = {Proceedings of the 14th ACM Workshop on Hot Topics in Storage and File Systems},
+  series = {HotStorage '22},
+  year = {2022},
+  pages = {37--44},
+  publisher = {ACM},
+  url = {https://doi.org/10.1145/3538643.3539752},
+  doi = {10.1145/3538643.3539752},
+}</code></pre>{% endraw %}
+
+{% include sponsors.html sponsors="nsf" %}

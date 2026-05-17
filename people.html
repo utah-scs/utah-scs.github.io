@@ -12,7 +12,7 @@ notitle: true
 {% assign masters = site.data.people | where: "category", "masters" %}
 {% assign ugs = site.data.people | where: "category", "ug" %}
 
-{% assign phds_alumni = site.data.people | where: "category", "alumni-phd" %}
+{% assign phd_alumni = site.data.people | where: "category", "alumni-phd" %}
 {% assign masters_alumni = site.data.people | where: "category", "alumni-masters" %}
 {% assign ug_alumni = site.data.people | where: "category", "alumni-ug" %}
 
@@ -24,18 +24,21 @@ notitle: true
   </a>
    <a href="{{ryan.webpage |escape}}" style="font-size: 14pt;">Ryan Stutsman</a>
    <p>
-     is Associate Professor in the <a
+     is an Associate Professor in the <a
         href="http://www.utah.edu/">University of Utah</a> <a
         href="http://www.cs.utah.edu/">School of Computing</a>. His
-      interests span operating systems and distributed
-      systems with an emphasis on low-latency distributed storage systems.
+      interests span operating systems, storage systems, distributed systems,
+      and computer architecture, with an emphasis on fast, efficient systems
+      for emerging systems hardware.
       Ryan was a Postdoctoral Researcher in the
       <a href="http://research.microsoft.com/en-us/groups/db/">databases group</a> at Microsoft
       Research, and earned his Ph.D. at Stanford University working
       as a part of the
       <a href="https://ramcloud.atlassian.net/wiki/spaces/RAM/overview">RAMCloud</a>
       and the <a href="https://www.scs.stanford.edu/">Secure Computer Systems</a> labs.
-      He is the recipient of a NSF Career Award (2018) and VMware Early Career Faculty Award (2019).
+      He is the recipient of a Presidential Early Career Award for Scientists
+      and Engineers, an NSF CAREER Award (2018), and the VMware Early Career
+      Faculty Award (2019).
    </p>
 </div>
 <br style="clear: both;">
@@ -50,15 +53,19 @@ notitle: true
   <div class="person">
       {% if person.webpage %}
       <a href="{{ person.webpage |escape }}">
+      {% endif %}
+         {% if person.headshot %}
          <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" style="display: inline-block"/>
+         {% endif %}
          <div class="person">
         {{ person.display_name }}<br>
         {{ person.role }}<br>
         <span style="font-size: 9pt;">{{ person.note }}</span>
          </div>
+      {% if person.webpage %}
       </a>
+      {% endif %}
     </div>
-  {% endif %}
 {% endfor %}
 </div>
 
@@ -69,15 +76,19 @@ notitle: true
   <div class="person">
       {% if person.webpage %}
       <a href="{{ person.webpage |escape }}">
+      {% endif %}
+         {% if person.headshot %}
          <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" style="display: inline-block"/>
+         {% endif %}
          <div class="person">
         {{ person.display_name }}<br>
         {{ person.role }}<br>
         <span style="font-size: 9pt;">{{ person.note }}</span>
          </div>
+      {% if person.webpage %}
       </a>
+      {% endif %}
     </div>
-  {% endif %}
 {% endfor %}
 </div>
 
@@ -88,15 +99,19 @@ notitle: true
   <div class="person">
       {% if person.webpage %}
       <a href="{{ person.webpage |escape }}">
+      {% endif %}
+         {% if person.headshot %}
          <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" style="display: inline-block"/>
+         {% endif %}
          <div class="person">
         {{ person.display_name }}<br>
         {{ person.role }}<br>
         <span style="font-size: 9pt;">{{ person.note }}</span>
          </div>
+      {% if person.webpage %}
       </a>
+      {% endif %}
     </div>
-  {% endif %}
 {% endfor %}
 </div>
 
@@ -107,19 +122,23 @@ notitle: true
 <h3>PhD</h3>
 
 <div class="people">
-{% for person in phds_alumni %}
+{% for person in phd_alumni %}
   <div class="person">
       {% if person.webpage %}
       <a href="{{ person.webpage |escape }}">
+      {% endif %}
+         {% if person.headshot %}
          <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" style="display: inline-block"/>
+         {% endif %}
          <div class="person">
         {{ person.display_name }}<br>
         {{ person.role }}<br>
         <span style="font-size: 9pt;">{{ person.note }}</span>
          </div>
+      {% if person.webpage %}
       </a>
+      {% endif %}
     </div>
-  {% endif %}
 {% endfor %}
 </div>
 
@@ -130,15 +149,19 @@ notitle: true
   <div class="person">
       {% if person.webpage %}
       <a href="{{ person.webpage |escape }}">
+      {% endif %}
+         {% if person.headshot %}
          <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" style="display: inline-block"/>
+         {% endif %}
          <div class="person">
         {{ person.display_name }}<br>
         {{ person.role }}<br>
         <span style="font-size: 9pt;">{{ person.note }}</span>
          </div>
+      {% if person.webpage %}
       </a>
+      {% endif %}
     </div>
-  {% endif %}
 {% endfor %}
 </div>
 
@@ -149,15 +172,18 @@ notitle: true
   <div class="person">
       {% if person.webpage %}
       <a href="{{ person.webpage |escape }}">
+      {% endif %}
+         {% if person.headshot %}
          <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75" style="display: inline-block"/>
+         {% endif %}
          <div class="person">
         {{ person.display_name }}<br>
         {{ person.role }}<br>
         <span style="font-size: 9pt;">{{ person.note }}</span>
          </div>
+      {% if person.webpage %}
       </a>
+      {% endif %}
     </div>
-  {% endif %}
 {% endfor %}
 </div>
-

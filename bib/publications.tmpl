@@ -15,10 +15,11 @@
 		<td class="publication">
 			<span class="pubtitle">
 				{%- set url = "projects/" ~ entry.fields['key']|replace(':', '_') %}
+				{%- set title = entry|title %}
 				{%- if entry.fields['scs_no_page'] == "true" %}
-				{{ entry|title }}.
+				{{ title }}{% if title[-1] not in '.?!' %}.{% endif %}
 				{%- else %}
-				<a href="{{ url|escape }}">{{ entry|title }}</a>.
+				<a href="{{ url|escape }}">{{ title }}</a>{% if title[-1] not in '.?!' %}.{% endif %}
 				{%- endif %}
 			</span><br />
 			<span class="authors">

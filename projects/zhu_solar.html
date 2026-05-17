@@ -1,0 +1,34 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["zhu_solar"] %}
+{% include paper.html paper=paper %}
+
+<h2>Summary</h2>
+
+<p>
+Solar is a distributed relational database that combines a single transaction
+node with distributed log-structured storage nodes. Its shared-everything
+architecture and concurrency-control design target efficient transaction
+processing even when transactions span data stored across multiple nodes.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+{% raw %}<pre><code>@inproceedings{zhu:solar,
+  author = {Tao Zhu and Zhuoyue Zhao and Feifei Li and Weining Qian and Aoying Zhou and Dong Xie and Ryan Stutsman and Haining Li and Huiqi Hu},
+  title = {{Towards a Shared-Everything Database on Distributed Log-Structured Storage}},
+  booktitle = {Proceedings of the 2018 USENIX Annual Technical Conference},
+  year = {2018},
+  month = Jul,
+  address = {Boston, MA},
+  url = {https://www.usenix.org/conference/atc18/presentation/zhu},
+  publisher = {USENIX Association},
+  series = {USENIX ATC '18},
+}</code></pre>{% endraw %}
+
+{% include sponsors.html sponsors="nsf" %}

@@ -1,0 +1,32 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["zhong_xrp"] %}
+{% include paper.html paper=paper %}
+
+<h2>Summary</h2>
+
+<p>
+XRP uses eBPF hooks in the NVMe driver to run storage functions close to fast
+storage devices while preserving file-system semantics. It propagates enough
+kernel and file-system state to the driver to support safe resubmission of
+dependent I/O requests, reducing latency and improving throughput for
+storage-backed data structures.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+{% raw %}<pre><code>@inproceedings{zhong:xrp,
+  author = {Yuhong Zhong and Haoyu Li and Yu Jian Wu and Ioannis Zarkadas and Jeffrey Tao and Evan Mesterhazy and Michael Makris and Junfeng Yang and Amy Tai and Ryan Stutsman and Asaf Cidon},
+  title = {{XRP: In-Kernel Storage Functions with eBPF}},
+  booktitle = {16th USENIX Symposium on Operating Systems Design and Implementation},
+  series = {OSDI '22},
+  year = {2022},
+  url = {https://www.usenix.org/conference/osdi22/presentation/zhong},
+}</code></pre>{% endraw %}
+
+{% include sponsors.html sponsors="nsf" %}

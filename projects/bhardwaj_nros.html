@@ -1,0 +1,31 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["bhardwaj_nros"] %}
+{% include paper.html paper=paper %}
+
+<h2>Summary</h2>
+
+<p>
+NrOS is an operating-system kernel that scales a mostly sequential kernel design
+across NUMA machines using node replication. It keeps per-NUMA-node replicas of
+kernel state, lets cores read locally, and uses operation logs to keep replicas
+consistent while retaining much of the simplicity of a sequential kernel.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+{% raw %}<pre><code>@inproceedings{bhardwaj:nros,
+  author = {Ankit Bhardwaj and Chinmay Kulkarni and Reto Achermann and Irina Calciu and Sanidhya Kashyap and Ryan Stutsman and Amy Tai and Gerd Zellweger},
+  title = {{NrOS: Effective Replication and Sharing in an Operating System}},
+  booktitle = {Proceedings of the 15th USENIX Symposium on Operating Systems Design and Implementation},
+  series = {OSDI '21},
+  year = {2021},
+  url = {https://www.usenix.org/conference/osdi21/presentation/bhardwaj},
+}</code></pre>{% endraw %}
+
+{% include sponsors.html sponsors="nsf" %}

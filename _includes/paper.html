@@ -9,9 +9,8 @@
   {% endif %}
   <div style="vertical-align: middle; height: 150; display: table-cell;">
     <span style="font-size: 16pt;">{{ include.paper.title }}</span><br>
-    <span>{{ include.paper.authors }}</span><br>
+    <span>{{ include.paper.author_list | default: include.paper.authors }}</span><br>
     <span>{{ include.paper.series }}</span><br><br>
     {% include paper-nav.html paper=include.paper %}
   </div>
 </div>
-

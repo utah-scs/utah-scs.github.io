@@ -1,0 +1,59 @@
+---
+layout: default
+title: Cache-Coherent Accelerators for Efficient Persistent Memory Programming
+projects:
+  - link: project/cache-coherent-accelerators
+    name: Cache-Coherent Accelerators
+    summary: Cache-Coherent Accelerators for Efficient Persistent Memory Programming
+---
+
+<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2245999" style="font-size: 14pt;">
+  NSF CNS 2245999
+</a>
+
+<hr>
+
+<p>
+  Emerging coherent and non-coherent device interfaces are changing how systems
+  software accesses persistent memory, remote memory, and I/O devices.
+  Cache-coherent accelerators can interpose on persistent memory operations
+  without putting software back on the critical path, while efficient ordering
+  mechanisms can keep CPU-to-device communication fast even when the
+  interconnect itself is non-coherent.
+</p>
+
+<p>
+  The resulting systems combine accelerator-managed crash consistency,
+  support for remote memory access, and memory-ordering mechanisms for fast
+  I/O paths.
+</p>
+
+<h2>Publications</h2>
+
+{% assign pcie = site.data.pubs["liew_pcie-ordering"] %}
+{% include scale-out-paper.html paper=pcie
+    note="Efficient ordering mechanisms for CPU-to-device communication over
+    non-coherent interconnects." %}
+
+{% assign mmio = site.data.pubs["liew_mmio"] %}
+{% include scale-out-paper.html paper=mmio
+    note="A case for carefully ordered MMIO as a short, efficient path between
+    CPUs and NICs." %}
+
+{% assign packrat = site.data.pubs["bhardwaj_packrat"] %}
+{% include scale-out-paper.html paper=packrat
+    note="Automatic reconfiguration for latency-sensitive serving workloads." %}
+
+{% assign prefetching = site.data.pubs["mcmahon_prefetching"] %}
+{% include scale-out-paper.html paper=prefetching
+    note="A study of prefetching granularity for remote memory systems." %}
+
+{% assign objectier = site.data.pubs["pawar_objectier"] %}
+{% include scale-out-paper.html paper=objectier
+    note="Application-informed memory tiering without invasive application
+    changes." %}
+
+{% assign pax = site.data.pubs["bhardwaj_pax"] %}
+{% include scale-out-paper.html paper=pax
+    note="Cache-coherent accelerator support for persistent memory crash
+    consistency." %}

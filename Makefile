@@ -1,4 +1,5 @@
-PYTHON=python3
+PYTHON=uv run --with pybtex --with jinja2 python
+BIBGEN=bib/generate-pubs.py
 
 # targets that aren't filenames
 .PHONY: all clean deploy
@@ -7,15 +8,15 @@ all: _includes/pubs.html _data/pubs.yml _site/index.html
 
 BUILDARGS :=
 _site/index.html:
-	jekyll build $(BUILDARGS)
+	bundle exec jekyll build $(BUILDARGS)
 
 _includes/pubs.html: bib/pubs.bib bib/publications.tmpl
 	mkdir -p _includes
-	$(PYTHON) bibble/bibble.py $+ > $@
+	$(PYTHON) $(BIBGEN) $+ > $@
 
 _data/pubs.yml: bib/pubs.bib bib/pubs-yml.tmpl
 	mkdir -p _includes
-	$(PYTHON) bibble/bibble.py $+ > $@
+	$(PYTHON) $(BIBGEN) $+ > $@
 
 _site/index.html: $(wildcard *.html) _includes/pubs.html _config.yml \
 	_layouts/default.html
