@@ -1,0 +1,41 @@
+---
+layout: default
+title:
+notitle: true
+---
+
+{% assign paper = site.data.pubs["liew_mmio"] %}
+{% include paper.html paper=paper %}
+
+<h2>Summary</h2>
+
+<p>
+Conventional NIC transmit paths send a small MMIO doorbell to the device and
+then rely on DMA reads to fetch descriptors and packet buffers. This paper
+revisits that design point and argues that direct MMIO writes can be a shorter,
+faster CPU-to-NIC path when ordering constraints are relaxed.
+</p>
+
+<p>
+The work proposes hardware support at the NIC to recover the ordering needed
+for correctness while allowing CPUs to issue high-throughput unordered MMIO
+writes. This makes a simple programmed-I/O transmit path competitive with more
+complex DMA-centric interfaces.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+{% raw %}<pre><code>@inproceedings{liew:mmio,
+  author = {Wei Siew Liew and Md Ashfaqur Rahaman and James McMahon and Ryan Stutsman and Vijay Nagarajan},
+  title = {{Stop Taking the Scenic Route: the Shortest Distance Between the CPU and the NIC is MMIO}},
+  booktitle = {Proceedings of the 2025 Workshop on Hot Topics in Operating Systems},
+  series = {HotOS '25},
+  year = {2025},
+  pages = {144--150},
+  publisher = {ACM},
+  url = {https://doi.org/10.1145/3713082.3730389},
+  doi = {10.1145/3713082.3730389},
+}</code></pre>{% endraw %}
+
+{% include sponsors.html sponsors="nsf" %}

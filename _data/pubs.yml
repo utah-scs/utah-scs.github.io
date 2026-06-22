@@ -140,9 +140,9 @@ liew_mmio:
     logo: ""
     pdf_url: "papers/liew-mmio.pdf"
     code_url: ""
-    grants: []
-    grant_ids: []
-    no_page: "true"
+    grants: [{"id": "2245999", "label": "NSF CNS-2245999", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2245999"}]
+    grant_ids: ["2245999"]
+    no_page: ""
 
 mcmahon_prefetching:
     key: "mcmahon_prefetching"
@@ -195,7 +195,7 @@ pawar_objectier:
     publisher: "ACM"
     note: ""
     abstract: ""
-    logo: ""
+    logo: "img/objectier.png"
     pdf_url: "papers/pawar-objectier.pdf"
     code_url: ""
     grants: [{"id": "2245999", "label": "NSF CNS-2245999", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2245999"}]
