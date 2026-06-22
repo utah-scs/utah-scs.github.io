@@ -62,3 +62,32 @@ projects:
 {% include scale-out-paper.html paper=pax
     note="Cache-coherent accelerator support for persistent memory crash
     consistency." %}
+
+<h2>Team</h2>
+
+<div class="people" style="width: 100%; text-align: center;">
+{% for item in site.data.people %}
+  {% assign person = item[1] %}
+  {% if person.cachecoherent == true %}
+    <span style="text-align: center; display: inline;">
+      {% if person.webpage %}
+      <a href="{{ person.webpage |escape }}">
+      {% endif %}
+         <div style="display: table-cell; padding: 20px;">
+           {% if person.headshot %}
+             {% if person.headshot contains 'http' %}
+             <img class="img-circle" src="{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75"><br>{{ person.display_name }}
+             {% else %}
+             <img class="img-circle" src="{{site.base}}/{{person.headshot}}" alt="{{person.display_name}}" width="75" height="75"><br>{{ person.display_name }}
+             {% endif %}
+           {% else %}
+             <div class="img-circle" style="width: 75px; height: 75px; display: inline-block; background: #ddd; line-height: 75px; font-size: 18pt; color: #555;">{{ person.display_name | slice: 0 }}</div><br>{{ person.display_name }}
+           {% endif %}
+         </div>
+      {% if person.webpage %}
+      </a>
+      {% endif %}
+     </span>
+  {% endif %}
+{% endfor %}
+</div>

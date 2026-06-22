@@ -6,6 +6,7 @@ ryan:
     headshot: "img/ryan-stutsman.jpg"
     splinter: true
     scaleout: true
+    cachecoherent: true
     category: "faculty"
 
 amit:
@@ -24,6 +25,7 @@ ashfaq:
     github: aagontuk
     headshot: "https://avatars.githubusercontent.com/u/13454573?s=75"
     splinter: true
+    cachecoherent: true
     category: "phd"
 
 james:
@@ -33,12 +35,14 @@ james:
     github: 4rnge
     headshot: "https://avatars.githubusercontent.com/u/43098353?s=75"
     splinter: true
+    cachecoherent: true
     category: "phd"
 
 vinita:
     display_name: "Vinita Pawar"
     role: "PhD Student"
     note: "Application semantics-informed memory tiering"
+    cachecoherent: true
     category: "phd"
 
 yadunandan:
@@ -92,6 +96,7 @@ ankit:
     github: ankit-iitb
     headshot: "https://avatars0.githubusercontent.com/u/13118532?s=75"
     splinter: true
+    cachecoherent: true
     category: "alumni-phd"
 
 mazhar:
@@ -165,6 +170,7 @@ todd:
     webpage: "http://github.com/tthorn47/"
     note: "Programmable disaggregated memory data structures"
     headshot: "https://avatars.githubusercontent.com/u/43832213?s=75"
+    cachecoherent: true
     category: "alumni-masters"
 
 meghana:
