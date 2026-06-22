@@ -30,6 +30,11 @@ projects:
 
 <h2>Publications</h2>
 
+{% assign grace_hopper = site.data.pubs["bagchi_grace-hopper"] %}
+{% include scale-out-paper.html paper=grace_hopper
+    note="A characterization of consistency and coherence behavior across the
+    CPU-GPU memory boundary in NVIDIA Grace-Hopper systems." %}
+
 {% assign pcie = site.data.pubs["liew_pcie-ordering"] %}
 {% include scale-out-paper.html paper=pcie
     note="Efficient ordering mechanisms for CPU-to-device communication over

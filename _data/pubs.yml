@@ -1,4 +1,33 @@
 
+bagchi_grace-hopper:
+    key: "bagchi_grace-hopper"
+    bib_key: "bagchi:grace-hopper"
+    type: "inproceedings"
+    year: "2026"
+    month: ""
+    url: "https://doi.org/10.1145/3814942.3816134"
+    doi: "10.1145/3814942.3816134"
+    title: "Consistency and Coherence of the NVIDIA Grace-Hopper Superchip"
+    authors: ["Soham Bagchi", "Sanya Srivastava", "Reese Levine", "Tyler Sorensen", "Ryan Stutsman", "Vijay Nagarajan"]
+    author_list: "Soham Bagchi, Sanya Srivastava, Reese Levine, Tyler Sorensen, Ryan Stutsman, and Vijay Nagarajan"
+    series: "ISMM '26"
+    venue_type: ""
+    venue: "Proceedings of the 2026 ACM SIGPLAN International Symposium on Memory Management (ISMM '26)"
+    booktitle: "Proceedings of the 2026 ACM SIGPLAN International Symposium on Memory Management"
+    journal: ""
+    volume: ""
+    number: ""
+    pages: "66--79"
+    publisher: "ACM"
+    note: ""
+    abstract: ""
+    logo: ""
+    pdf_url: ""
+    code_url: ""
+    grants: []
+    grant_ids: []
+    no_page: ""
+
 liew_pcie-ordering:
     key: "liew_pcie-ordering"
     bib_key: "liew:pcie-ordering"
