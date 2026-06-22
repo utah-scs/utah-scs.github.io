@@ -1,0 +1,40 @@
+---
+layout: default
+title:
+notitle: true
+permalink: /projects/bagchi_grace-hopper/
+---
+
+{% assign paper = site.data.pubs["bagchi_grace-hopper"] %}
+{% include paper.html paper=paper %}
+
+<h2>Summary</h2>
+
+<p>
+The NVIDIA Grace-Hopper Superchip tightly couples CPU and GPU memory systems,
+but the consistency and coherence behavior exposed to software is not fully
+captured by traditional CPU-only or GPU-only memory-model assumptions. This
+work characterizes the ordering and coherence properties visible across the
+Grace CPU and Hopper GPU.
+</p>
+
+<p>
+The paper uses litmus tests and microbenchmarks to identify the practical
+semantics that system software and runtimes can rely on when sharing data
+across the CPU-GPU boundary.
+</p>
+
+<a name="bibtex"></a>
+<h2>Bibtex</h2>
+
+{% raw %}<pre><code>@inproceedings{bagchi:grace-hopper,
+  author = {Soham Bagchi and Sanya Srivastava and Reese Levine and Tyler Sorensen and Ryan Stutsman and Vijay Nagarajan},
+  title = {{Consistency and Coherence of the NVIDIA Grace-Hopper Superchip}},
+  booktitle = {Proceedings of the 2026 ACM SIGPLAN International Symposium on Memory Management},
+  series = {ISMM '26},
+  year = {2026},
+  pages = {66--79},
+  publisher = {ACM},
+  url = {https://doi.org/10.1145/3814942.3816134},
+  doi = {10.1145/3814942.3816134},
+}</code></pre>{% endraw %}
