@@ -1,0 +1,41 @@
+{% assign paper = include.paper %}
+{% assign sponsors = paper.sponsors %}
+
+{% if paper.grants.size > 0 or sponsors.size > 0 %}
+<h2>Acknowledged Support</h2>
+
+<div class="paper-support" style="text-align: center;">
+  {% for grant in paper.grants %}
+  <span style="display: inline-block; padding: 18px; vertical-align: middle;">
+    <a href="{{ grant.url }}">
+      <img src="{{ site.base }}/img/nsf-logo.png" alt="NSF Logo" width="96"><br>
+      {{ grant.label }}
+    </a>
+  </span>
+  {% endfor %}
+
+  {% for sponsor in sponsors %}
+    {% assign sponsor_key = sponsor | downcase %}
+    <span style="display: inline-block; padding: 18px; vertical-align: middle;">
+      {% if sponsor_key == "nsf" %}
+        <img src="{{ site.base }}/img/nsf-logo.png" alt="NSF Logo" width="96"><br>
+        NSF
+      {% elsif sponsor_key == "facebook" or sponsor_key == "meta" %}
+        Meta
+      {% elsif sponsor_key == "vmware" %}
+        VMware
+      {% elsif sponsor_key == "google" %}
+        Google
+      {% elsif sponsor_key == "arm" %}
+        Arm
+      {% elsif sponsor_key == "intel" %}
+        Intel
+      {% elsif sponsor_key == "microsoft" %}
+        Microsoft
+      {% else %}
+        {{ sponsor }}
+      {% endif %}
+    </span>
+  {% endfor %}
+</div>
+{% endif %}
