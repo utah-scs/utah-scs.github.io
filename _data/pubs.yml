@@ -21,7 +21,7 @@ bagchi_grace-hopper:
     publisher: "ACM"
     note: ""
     abstract: ""
-    logo: ""
+    logo: "img/bagchi-grace-hopper.png"
     pdf_url: ""
     code_url: ""
     grants: []
@@ -166,7 +166,7 @@ liew_mmio:
     publisher: "ACM"
     note: ""
     abstract: ""
-    logo: ""
+    logo: "img/liew-mmio.png"
     pdf_url: "papers/liew-mmio.pdf"
     code_url: ""
     grants: [{"id": "2245999", "label": "NSF CNS-2245999", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2245999"}]
