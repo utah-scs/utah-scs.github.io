@@ -427,7 +427,7 @@ bhardwaj_pax:
     publisher: "ACM"
     note: "Intel Best Paper Award"
     abstract: ""
-    logo: ""
+    logo: "img/bhardwaj-pax.png"
     pdf_url: "papers/bhardwaj-pax.pdf"
     code_url: ""
     grants: [{"id": "1750558", "label": "NSF CNS-1750558", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1750558"}]
