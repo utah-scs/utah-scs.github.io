@@ -2,17 +2,14 @@
 {% assign sponsors = paper.sponsors %}
 
 {% if paper.grants.size > 0 or sponsors.size > 0 %}
-<h2>Acknowledged Support</h2>
+<h2>Generously Sponsored By</h2>
 
 <div class="paper-support" style="text-align: center;">
-  {% for grant in paper.grants %}
+  {% if paper.grants.size > 0 %}
   <span style="display: inline-block; padding: 18px; vertical-align: middle;">
-    <a href="{{ grant.url }}">
-      <img src="{{ site.base }}/img/nsf-logo.png" alt="NSF Logo" width="96"><br>
-      {{ grant.label }}
-    </a>
+    <img src="{{ site.base }}/img/nsf-logo.png" alt="NSF Logo" width="96"><br>
   </span>
-  {% endfor %}
+  {% endif %}
 
   {% for sponsor in sponsors %}
     {% assign sponsor_key = sponsor | downcase %}
