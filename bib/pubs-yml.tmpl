@@ -26,5 +26,6 @@
     code_url: {{ entry.fields['code_url']|yaml }}
     grants: {{ (entry|grant_list)|yaml }}
     grant_ids: {{ (entry|grant_ids)|yaml }}
+    sponsors: {{ (entry|sponsor_list)|yaml }}
     no_page: {{ entry.fields['scs_no_page']|yaml }}
 {% endfor %}

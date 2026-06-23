@@ -26,6 +26,7 @@ bagchi_grace-hopper:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: ""
 
 liew_pcie-ordering:
@@ -53,8 +54,9 @@ liew_pcie-ordering:
     logo: "img/pcie-order.png"
     pdf_url: "papers/liew-pcie-ordering.pdf"
     code_url: ""
-    grants: [{"id": "2245999", "label": "NSF CNS-2245999", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2245999"}]
-    grant_ids: ["2245999"]
+    grants: [{"id": "2525270", "label": "NSF CCF-2525270", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2525270"}, {"id": "2245999", "label": "NSF CNS-2245999", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2245999"}]
+    grant_ids: ["2525270", "2245999"]
+    sponsors: ["Arm", "Google", "VMware", "Meta"]
     no_page: ""
 
 samanta_water-footprint:
@@ -84,6 +86,7 @@ samanta_water-footprint:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 samanta_gridgreen:
@@ -113,6 +116,7 @@ samanta_gridgreen:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 bhardwaj_packrat:
@@ -142,6 +146,7 @@ bhardwaj_packrat:
     code_url: ""
     grants: [{"id": "2245999", "label": "NSF CNS-2245999", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2245999"}]
     grant_ids: ["2245999"]
+    sponsors: []
     no_page: ""
 
 liew_mmio:
@@ -171,6 +176,7 @@ liew_mmio:
     code_url: ""
     grants: [{"id": "2245999", "label": "NSF CNS-2245999", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2245999"}]
     grant_ids: ["2245999"]
+    sponsors: ["Arm", "VMware"]
     no_page: ""
 
 mcmahon_prefetching:
@@ -200,6 +206,7 @@ mcmahon_prefetching:
     code_url: ""
     grants: [{"id": "2245999", "label": "NSF CNS-2245999", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2245999"}]
     grant_ids: ["2245999"]
+    sponsors: ["VMware"]
     no_page: ""
 
 pawar_objectier:
@@ -229,6 +236,7 @@ pawar_objectier:
     code_url: ""
     grants: [{"id": "2245999", "label": "NSF CNS-2245999", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2245999"}]
     grant_ids: ["2245999"]
+    sponsors: ["VMware"]
     no_page: ""
 
 samanta_sustainable-routing:
@@ -258,6 +266,7 @@ samanta_sustainable-routing:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 samanta_anubis:
@@ -287,6 +296,7 @@ samanta_anubis:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 al-mahfoudh_linearizability-checking:
@@ -316,6 +326,7 @@ al-mahfoudh_linearizability-checking:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 hance_sharding:
@@ -345,6 +356,7 @@ hance_sharding:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 samanta_pmem-aware:
@@ -374,6 +386,7 @@ samanta_pmem-aware:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 samanta_multi-resource:
@@ -403,6 +416,7 @@ samanta_multi-resource:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 bhardwaj_pax:
@@ -432,6 +446,7 @@ bhardwaj_pax:
     code_url: ""
     grants: [{"id": "1750558", "label": "NSF CNS-1750558", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1750558"}]
     grant_ids: ["1750558"]
+    sponsors: []
     no_page: ""
 
 zhong_xrp:
@@ -461,6 +476,7 @@ zhong_xrp:
     code_url: ""
     grants: [{"id": "1750558", "label": "NSF CNS-1750558", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1750558"}]
     grant_ids: ["1750558"]
+    sponsors: ["Intel equipment gift"]
     no_page: ""
 
 zhong_bpf-storage:
@@ -490,6 +506,7 @@ zhong_bpf-storage:
     code_url: ""
     grants: [{"id": "1750558", "label": "NSF CNS-1750558", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1750558"}]
     grant_ids: ["1750558"]
+    sponsors: ["ARO", "ONR", "Intel equipment donation", "JP Morgan Faculty Research Award", "DiDi Faculty Research Award"]
     no_page: ""
 
 kulkarni_achieving-throughput:
@@ -519,6 +536,7 @@ kulkarni_achieving-throughput:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 bhardwaj_nros:
@@ -548,6 +566,7 @@ bhardwaj_nros:
     code_url: ""
     grants: [{"id": "1750558", "label": "NSF CNS-1750558", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1750558"}]
     grant_ids: ["1750558"]
+    sponsors: []
     no_page: ""
 
 bhardwaj_asfp:
@@ -577,6 +596,7 @@ bhardwaj_asfp:
     code_url: ""
     grants: [{"id": "1750558", "label": "NSF CNS-1750558", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1750558"}]
     grant_ids: ["1750558"]
+    sponsors: []
     no_page: ""
 
 tassori_leakage-free:
@@ -606,6 +626,7 @@ tassori_leakage-free:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 novak_memscale:
@@ -635,6 +656,7 @@ novak_memscale:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 bhardwaj_sandstorm:
@@ -664,6 +686,7 @@ bhardwaj_sandstorm:
     code_url: ""
     grants: [{"id": "1750558", "label": "NSF CNS-1750558", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1750558"}]
     grant_ids: ["1750558"]
+    sponsors: []
     no_page: ""
 
 zhang_shredder:
@@ -693,6 +716,7 @@ zhang_shredder:
     code_url: ""
     grants: [{"id": "1750558", "label": "NSF CNS-1750558", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1750558"}, {"id": "1566175", "label": "NSF CNS-1566175", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1566175"}]
     grant_ids: ["1750558", "1566175"]
+    sponsors: []
     no_page: ""
 
 eisenmann_flashield:
@@ -722,6 +746,7 @@ eisenmann_flashield:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 alonso_dpi:
@@ -751,6 +776,7 @@ alonso_dpi:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 novak_feat:
@@ -780,6 +806,7 @@ novak_feat:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 nag_gencache:
@@ -809,6 +836,7 @@ nag_gencache:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 cho_mobilestream:
@@ -838,6 +866,7 @@ cho_mobilestream:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 kulkarni_splinter:
@@ -867,6 +896,7 @@ kulkarni_splinter:
     code_url: "http://github.com/utah-scs/splinter"
     grants: [{"id": "1750558", "label": "NSF CNS-1750558", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1750558"}, {"id": "1566175", "label": "NSF CNS-1566175", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1566175"}]
     grant_ids: ["1750558", "1566175"]
+    sponsors: []
     no_page: ""
 
 maricq_variability:
@@ -896,6 +926,7 @@ maricq_variability:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 nguyen_echo:
@@ -925,6 +956,7 @@ nguyen_echo:
     code_url: ""
     grants: [{"id": "1566175", "label": "NSF CNS-1566175", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1566175"}]
     grant_ids: ["1566175"]
+    sponsors: []
     no_page: ""
 
 taleb_tailwind:
@@ -954,6 +986,7 @@ taleb_tailwind:
     code_url: ""
     grants: [{"id": "1750558", "label": "NSF CNS-1750558", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1750558"}, {"id": "1566175", "label": "NSF CNS-1566175", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1566175"}]
     grant_ids: ["1750558", "1566175"]
+    sponsors: []
     no_page: ""
 
 zhu_solar:
@@ -983,6 +1016,7 @@ zhu_solar:
     code_url: ""
     grants: [{"id": "1750558", "label": "NSF CNS-1750558", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1750558"}]
     grant_ids: ["1750558"]
+    sponsors: []
     no_page: ""
 
 kulkarni_rocksteady:
@@ -1012,6 +1046,7 @@ kulkarni_rocksteady:
     code_url: "http://github.com/utah-scs/RAMCloud/tree/rocksteady-sosp2017"
     grants: [{"id": "1566175", "label": "NSF CNS-1566175", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1566175"}]
     grant_ids: ["1566175"]
+    sponsors: []
     no_page: ""
 
 cidon_memshare:
@@ -1041,6 +1076,7 @@ cidon_memshare:
     code_url: "http://github.com/utah-scs/lsm-sim"
     grants: [{"id": "1566175", "label": "NSF CNS-1566175", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1566175"}]
     grant_ids: ["1566175"]
+    sponsors: []
     no_page: ""
 
 zhang_sandstorm:
@@ -1070,6 +1106,7 @@ zhang_sandstorm:
     code_url: ""
     grants: [{"id": "1566175", "label": "NSF CNS-1566175", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1566175"}]
     grant_ids: ["1566175"]
+    sponsors: []
     no_page: ""
 
 kulkarni_deb-ramcloud:
@@ -1099,6 +1136,7 @@ kulkarni_deb-ramcloud:
     code_url: ""
     grants: [{"id": "1566175", "label": "NSF CNS-1566175", "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1566175"}]
     grant_ids: ["1566175"]
+    sponsors: []
     no_page: ""
 
 kesavan_copy:
@@ -1128,6 +1166,7 @@ kesavan_copy:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 al-mahfoudh_ds2:
@@ -1157,6 +1196,7 @@ al-mahfoudh_ds2:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 al-mahfoudh_ds2-op-sem:
@@ -1186,6 +1226,7 @@ al-mahfoudh_ds2-op-sem:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"
 
 stutsman_dcft:
@@ -1215,4 +1256,5 @@ stutsman_dcft:
     code_url: ""
     grants: []
     grant_ids: []
+    sponsors: []
     no_page: "true"

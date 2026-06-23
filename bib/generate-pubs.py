@@ -110,8 +110,13 @@ def grant_list(entry):
         item = item.strip()
         if not item:
             continue
-        grant_id = item.replace("CNS-", "").strip()
-        label = f"NSF CNS-{grant_id}"
+        if "-" in item:
+            directorate, grant_id = item.split("-", 1)
+            grant_id = grant_id.strip()
+            label = f"NSF {directorate.strip()}-{grant_id}"
+        else:
+            grant_id = item
+            label = f"NSF CNS-{grant_id}"
         url = f"https://www.nsf.gov/awardsearch/showAward?AWD_ID={grant_id}"
         grants.append({"id": grant_id, "label": label, "url": url})
     return grants
@@ -119,6 +124,16 @@ def grant_list(entry):
 
 def grant_ids(entry):
     return [grant["id"] for grant in grant_list(entry)]
+
+
+def sponsor_list(entry):
+    value = entry.fields.get("scs_sponsors", "")
+    sponsors = []
+    for item in re.split(r"[,;]\s*", value):
+        item = item.strip()
+        if item:
+            sponsors.append(item)
+    return sponsors
 
 
 def month_match(month):
@@ -157,6 +172,7 @@ def main(bibfile, template):
     env.filters["extra_urls"] = extra_urls
     env.filters["grant_list"] = grant_list
     env.filters["grant_ids"] = grant_ids
+    env.filters["sponsor_list"] = sponsor_list
     env.filters["monthname"] = monthname
 
     with open(template) as handle:
